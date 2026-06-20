@@ -1,0 +1,27 @@
+BREVIA — Licencia de evaluación
+Copyright (c) 2026 Miguel Marrero. Todos los derechos reservados.
+
+Este software y sus materiales ("Brevia", incluyendo el código, los documentos,
+la investigación "B8" y el nombre "Brevia") son propiedad de Miguel Marrero.
+
+SE CONCEDE permiso, sin costo, ÚNICAMENTE para:
+  - usar y evaluar Brevia de forma personal, y
+  - enviar comentarios / feedback al autor.
+
+NO SE PERMITE, sin permiso ESCRITO previo del autor:
+  - redistribuir, publicar o compartir el software con terceros;
+  - venderlo, sublicenciarlo o usarlo con fines comerciales;
+  - crear obras derivadas o productos basados en él;
+  - reclamar autoría de la idea, el código o el nombre.
+
+El software se entrega "TAL CUAL" (AS IS), sin garantías de ningún tipo.
+
+La autoría y las fechas son verificables en el historial de control de versiones
+(git). Para permisos o licencias comerciales, contactar al autor.
+
+------------------------------------------------------------------------------
+EN: Evaluation license. Copyright (c) 2026 Miguel Marrero. All rights reserved.
+Permission is granted ONLY to personally use/evaluate Brevia and send feedback.
+Redistribution, commercial use, sublicensing, derivative works, or claiming
+authorship are NOT permitted without the author's prior written consent.
+Provided "AS IS", without warranty. Authorship/dates verifiable via git history.

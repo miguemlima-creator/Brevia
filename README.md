@@ -25,3 +25,8 @@ Casa propia del proyecto de Miguel — independiente del repo de TradingView de 
 ## Empezar
 - Probar sin instalar nada: abre `brevia/extension/demo.html`.
 - Mapa del proyecto y próximos pasos: `b8-lab/BLUEPRINT.md`.
+
+---
+
+© 2026 **Miguel Marrero**. Todos los derechos reservados. Brevia y la investigación B8 son
+de su autoría — ver `LICENSE.txt` (uso solo para evaluación) y `legal/NDA-plantilla.md`.
