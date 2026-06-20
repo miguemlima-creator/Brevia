@@ -25,8 +25,10 @@ Dos cosas, separadas a propósito:
 - [x] **Loop de datos** · prompt colector + ingestor + 2 puntos reales.
 - [ ] **E1 · Distribución** — juntar 10-20 taquigrafías (varios chats, varios modelos)
       → media y varianza de fidelidad + compresión. Convierte n=2 en evidencia seria.
-- [ ] **E2 · Prototipo "2 capas"** — taquigrafía + codebook sectorial juntos; medir
-      ahorro neto real con el codebook cacheado. Es el primer prototipo de B8 completo.
+- [x] **E2 · Prototipo "2 capas"** (`two_layer.py`) — taquigrafía + codebook sectorial.
+      Probado: 6/6 términos duros (B8, SPY, LLC, Mrs Lima, Cuba…) recuperados sin pérdida,
+      codebook 14 tok cacheable. La arquitectura completa de B8 funciona. Ver
+      `E2-two-layer-results.md`. Falta: ahorro neto combinado real sobre datos de E1.
 - [ ] **E3 · Narrativa** — Plan de B8 en PDF (con los números de E1/E2 adentro) +
       repo público + post. Lo que abre puertas a colaboradores/becas.
 - [ ] **E4 · Ayuda y recursos** — 1 colaborador técnico, créditos de cómputo (Colab/

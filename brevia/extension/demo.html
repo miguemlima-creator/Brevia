@@ -65,6 +65,12 @@
     <div class="stat"><div class="n" id="s-usd">—</div><div class="l">USD / 1000 envíos*</div></div>
   </div>
 
+  <div style="max-width:980px;margin:18px auto 0;background:#0F2A20;border:1px solid #02C39A;border-radius:12px;padding:14px 16px;">
+    <div style="color:#02C39A;font-weight:700;font-size:13px;margin-bottom:6px;">📊 Tu medidor de ahorro — acumulado en esta máquina (siempre actualizándose)</div>
+    <div id="meter" style="color:#E8EEF5;font-size:14px;">Aún no has comprimido nada. Dale a “Comprimir” y empieza a contar.</div>
+    <button id="resetMeter" class="ghost" style="margin-top:10px;font-size:12px;padding:6px 10px;">Reiniciar medidor</button>
+  </div>
+
   <p class="foot">*Estimación a $3 por 1M tokens de entrada · conteo aproximado · sirve para Claude, ChatGPT, Gemini y cualquier LLM.</p>
 
   <script src="brevia-engine.js"></script>
@@ -97,7 +103,18 @@ Muchas gracias, de verdad te lo agradezco muchísimo. Saludos.`;
       $('s-tok').textContent = fmt(r.tokensIn) + '→' + fmt(r.tokensOut);
       $('s-byt').textContent = '−' + fmt(r.bytesSaved);
       $('s-usd').textContent = '$' + (r.saved / 1e6 * 3 * 1000).toFixed(3);
+      renderMeter(globalThis.Brevia.meterRecord(r));
     });
+
+    function renderMeter(m){
+      if (!m || !m.uses){ $('meter').textContent = 'Aún no has comprimido nada. Dale a “Comprimir” y empieza a contar.'; return; }
+      const usd = (m.saved / 1e6 * 3).toFixed(4);
+      $('meter').innerHTML = '<b style="color:#02C39A;font-size:18px;">' + fmt(m.saved) + ' tokens</b> ahorrados en total · ' +
+        fmt(m.bytesSaved) + ' bytes menos de datos · en <b>' + fmt(m.uses) + '</b> usos · ≈ $' + usd + ' (a $3/1M)';
+    }
+    $('resetMeter').addEventListener('click', () => { globalThis.Brevia.meterReset(); renderMeter(globalThis.Brevia.meterGet()); });
+    renderMeter(globalThis.Brevia.meterGet());
+
     $('sample').addEventListener('click', () => { $('in').value = SAMPLE; });
     $('copy').addEventListener('click', async () => {
       if (!last) return;

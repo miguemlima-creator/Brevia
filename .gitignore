@@ -11,3 +11,7 @@ b8-lab/study/resultados/
 b8-lab/study/dataset.jsonl
 b8-lab/study/REPORTE_B8_DATOS.md
 b8-lab/study/_test*.js
+
+# Bundles generados (se regeneran; no versionar)
+para-estudiante/
+*.zip

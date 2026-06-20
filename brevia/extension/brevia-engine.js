@@ -137,5 +137,33 @@
     };
   }
 
-  globalThis.Brevia = { compress, countTokens };
+  // --- medidor de ahorro persistente (navegador, localStorage) ---
+  // Siempre actualiza cuánto se ha ahorrado en total; consultable con meterGet().
+  const METER_KEY = "brevia_meter_v1";
+  const ZERO = { uses: 0, tokensIn: 0, tokensOut: 0, saved: 0, bytesSaved: 0 };
+  function meterGet() {
+    try {
+      if (typeof localStorage === "undefined") return { ...ZERO };
+      const raw = localStorage.getItem(METER_KEY);
+      return raw ? { ...ZERO, ...JSON.parse(raw) } : { ...ZERO };
+    } catch (e) { return { ...ZERO }; }
+  }
+  function meterRecord(r) {
+    try {
+      if (typeof localStorage === "undefined") return meterGet();
+      const m = meterGet();
+      m.uses += 1;
+      m.tokensIn += r.tokensIn || 0;
+      m.tokensOut += r.tokensOut || 0;
+      m.saved += r.saved || 0;
+      m.bytesSaved += r.bytesSaved || 0;
+      localStorage.setItem(METER_KEY, JSON.stringify(m));
+      return m;
+    } catch (e) { return meterGet(); }
+  }
+  function meterReset() {
+    try { if (typeof localStorage !== "undefined") localStorage.removeItem(METER_KEY); } catch (e) {}
+  }
+
+  globalThis.Brevia = { compress, countTokens, meterGet, meterRecord, meterReset };
 })();
