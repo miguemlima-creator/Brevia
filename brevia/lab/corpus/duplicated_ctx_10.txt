@@ -1,0 +1,13 @@
+Hi, I was wondering if you could please help me with something. Thank you so much in advance.
+
+Necesito que explícame qué significa esto en palabras simples.
+
+Aquí está el documento:
+
+A well structured prompt gives the model exactly what it needs and nothing more. Redundant context, repeated documents, and verbose politeness all inflate the token count without improving the answer quality.
+
+Te lo pego otra vez por si acaso no te llegó completo:
+
+A well structured prompt gives the model exactly what it needs and nothing more. Redundant context, repeated documents, and verbose politeness all inflate the token count without improving the answer quality.
+
+De verdad mil gracias por tu tiempo y tu ayuda.

@@ -1,0 +1,13 @@
+Buenas tardes, quisiera pedirte si fueras tan amable de ayudarme con una duda, te lo agradecería mucho.
+
+Tengo un documento largo y necesito que summarize the following and list the key takeaways:
+
+El petróleo bajó en importancia relativa mientras subían nuevas formas de valor. Algunos piensan que los tokens de cómputo serán una unidad central de la economía digital del futuro, y que la eficiencia en su uso será una ventaja competitiva real.
+
+La inteligencia artificial está transformando la economía global. Los modelos de lenguaje grandes consumen una unidad de cómputo llamada token. Cada interacción tiene un costo en tokens, tanto de entrada como de salida. Optimizar su uso no es solo ahorrar dinero, también reduce el tráfico de datos y el consumo de energía.
+
+El cambio climático y el consumo energético de los centros de datos están ligados. Cada byte transmitido y procesado tiene una huella. Por eso la eficiencia en el uso de modelos no es solo económica, es ambiental.
+
+El petróleo bajó en importancia relativa mientras subían nuevas formas de valor. Algunos piensan que los tokens de cómputo serán una unidad central de la economía digital del futuro, y que la eficiencia en su uso será una ventaja competitiva real.
+
+Thank you so much, I really appreciate it. Best regards.

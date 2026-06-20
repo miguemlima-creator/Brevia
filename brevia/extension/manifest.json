@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Brevia — ahorra tokens",
+  "version": "0.1.0",
+  "description": "Comprime tus prompts antes de enviarlos a cualquier chat de IA. Ahorra tokens y datos. Funciona en Claude, ChatGPT y Gemini.",
+  "action": {
+    "default_title": "Brevia — comprimir prompt",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://claude.ai/*",
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://gemini.google.com/*"
+      ],
+      "js": ["brevia-engine.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

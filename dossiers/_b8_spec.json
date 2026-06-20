@@ -1,0 +1,46 @@
+{
+  "title": "B8 — Un lenguaje emergente de compresión para LLMs",
+  "subtitle": "Dossier · Fecha: 2026-06-20 · Tema: ¿puede un LLM construir, desde la interacción real del chat, un idioma denso propio para agrupar y reusar conocimiento?",
+  "sections": [
+    {
+      "heading": "Resumen ejecutivo",
+      "body": "La idea de Miguel —que el modelo desarrolle, de abajo hacia arriba y observando el chat troncal, un idioma denso propio (cápsulas en su taquigrafía, agrupadas por volumen/sector) para asimilar conocimiento— **no es fantasía**. Cada pieza de la idea corresponde a una línea de investigación activa, y una de ellas (un paper de enero de 2026) describe algo **casi idéntico** a la versión-herramienta.\n\n**Veredicto honesto:** instinto correcto y dirección real, pero **no es terreno virgen**. Hay que separar dos versiones: la *versión-herramienta* (un codebook externo aprendido del chat) es construible hoy sin entrenar, pero ya tiene competidores cercanos; la *versión-en-pesos* (que el modelo internalice ese idioma) es research puro, fuera de alcance individual hoy. El movimiento inteligente no es competir de frente en compresión, sino buscar un ángulo diferenciador: personalización + memoria + el *por qué*."
+    },
+    {
+      "heading": "La idea (en términos de Miguel)",
+      "body": "En vez de diseñar un idioma desde arriba (lo que exigiría entrenar los pesos del modelo), construir una **herramienta que observe pasivamente la interacción del chat**, mine las frases/conceptos que más se repiten, y arme un **codebook** que crece con el uso — un idioma que *emerge* de cómo Miguel y el modelo realmente hablan. Es, en sus palabras, un *Esperanto* (metáfora de un idioma universal nuevo), y funcionalmente un **\"BPE de nivel superior\"**: fusionar conceptos frecuentes en códigos cortos, igual que el tokenizador fusiona caracteres frecuentes."
+    },
+    {
+      "heading": "Qué dice la investigación",
+      "body": "**Razonar en el idioma propio del modelo (espacio latente).** *Coconut* (Meta, dic 2024) hace que el modelo razone con vectores continuos en vez de palabras: encadena estados ocultos como \"pensamientos continuos\". Supera al chain-of-thought clásico en tareas de planificación (97.0% vs 77.5% en ProsQA) usando *menos* tokens [1]. Es la \"versión fuerte\" del sueño de Miguel — pero requiere entrenamiento progresivo del modelo.\n\n**Perfiles por bloques (gist tokens).** *Learning to Compress Prompts with Gist Tokens* (Stanford, NeurIPS 2023) comprime un prompt en unos pocos tokens \"gist\" cacheables y reusables: hasta **26x** de compresión y **40% menos de cómputo**, sin costo extra sobre el fine-tuning normal [2]. Esto es, casi literalmente, los \"perfiles como archivos por bloques\" de Miguel — pero también vive dentro del modelo (modifica las máscaras de atención).\n\n**Emergencia de abajo hacia arriba.** Hay toda una línea de *comunicación emergente*: agentes que, interactuando, desarrollan espontáneamente un idioma comprimido. El framework *AI Mother Tongue* muestra compresión semántica espontánea vía cuantización vectorial [3]; *CELEBI* induce idiomas compositivos a través de un cuello de botella discreto que premia compresión y expresividad a la vez [4]. Esto respalda la intuición de que un idioma puede *emerger* del uso, no diseñarse.\n\n**La analogía del BPE es exacta.** El tokenizador BPE se \"entrena\" sobre un corpus fusionando iterativamente el par de símbolos más frecuente en uno nuevo, hasta llegar a un vocabulario [5]. La idea de Miguel es justo eso, un nivel más arriba: fusionar *frases/conceptos* frecuentes de sus chats. No sacó la idea de un paper; la dedujo."
+    },
+    {
+      "heading": "Lo que ya existe (estado del arte) — y la sorpresa",
+      "body": "La capa de \"comprimir antes de enviar\" ya está poblada: **LLMLingua** (Microsoft) logra hasta 20x con un modelo pequeño, sin entrenar, sobre cualquier LLM black-box [7]; hay guías comerciales que prometen ~60% de ahorro [10].\n\n**La sorpresa honesta:** la versión-herramienta de B8 ya tiene un primo cercano publicado. *Active Context Compression: Autonomous Memory Management in LLM Agents* (\"Focus\", enero 2026) propone un agente que **consolida sus aprendizajes en un bloque \"Knowledge\" persistente y poda el historial crudo** [6]. Eso es prácticamente la versión-herramienta de tu idea. Además, hay trabajo en codebooks aprendidos para memoria personalizada [8] y en representaciones de texto comprimidas (ARC-Encoder) [9].\n\nConclusión: la idea grande está validada por el mundo... y eso significa que **no llegaste primero a la versión obvia**. El hueco real no es \"comprimir bloques\", es *con qué ángulo* lo haces."
+    },
+    {
+      "heading": "Viabilidad y riesgos (sección crítica)",
+      "body": "**Versión-herramienta (codebook externo aprendido del chat):**\n- ✅ Construible hoy, sin entrenar pesos. Los LLM decodifican su propia taquigrafía casi sin clave.\n- ⚠️ El codebook pesa: para que el modelo lo use hay que meterlo en contexto → cuesta tokens. Hay que medir el ahorro **neto**, no el bruto.\n- ⚠️ Fragilidad: un idioma personal sobreajusta a un estilo; puede volverse ambiguo en temas nuevos. Y **no transfiere** entre usuarios.\n- ⚠️ Competidor cercano (*Focus* [6]): necesitas un diferenciador o serás \"otro compresor más\".\n\n**Versión-en-pesos (latente/gist real [1][2]):**\n- ❌ Fuera de alcance individual hoy: requiere entrenamiento, datos y GPUs. (La guía de escalado detallada queda pendiente para cuando el proyecto base esté en pasos firmes, según lo acordado.)\n\n**Lo más honesto:** en números puros de compresión, la versión-herramienta probablemente **no le gane a LLMLingua**. Su valor tendría que estar en otra parte."
+    },
+    {
+      "heading": "Caminos posibles",
+      "body": "- **1. Micro-experimento barato (ya definido).** Tomar unos chats reales de Miguel → top 10-20 frases/conceptos repetidos → asignarles códigos cortos → medir: ¿el ahorro neto (con el codebook incluido) es positivo y el modelo decodifica bien? Esfuerzo bajo, señal alta. Es el primer paso correcto.\n- **2. El diferenciador real: fusionar B8 con Engram (el \"por qué\").** Que el codebook no solo comprima, sino que guarde la *decisión/razón* detrás de cada bloque. Un \"idioma con memoria de intención\". Eso sí sería nuevo frente a Focus y LLMLingua, y conecta con la herramienta hermana que ya empezaste.\n- **3. Versión-en-pesos.** Solo con financiamiento o colaboración de research. Aspiracional, no inmediato."
+    },
+    {
+      "heading": "Veredicto",
+      "body": "Instinto **correcto**, dirección **real**, pero **no virgen**. La versión construible ya tiene un competidor publicado (Focus, 2026), así que competir de frente en \"comprimir bloques\" es perder. El movimiento inteligente: hacer el **micro-experimento barato** para validar que el ahorro neto existe, y apostar el diferenciador a lo que nadie está juntando bien — **compresión personal + memoria + el porqué**. Ahí B8 deja de ser \"otro compresor\" y se vuelve algo tuyo."
+    }
+  ],
+  "sources": [
+    "[1] Coconut — Training LLMs to Reason in a Continuous Latent Space (Meta, 2024) — https://arxiv.org/abs/2412.06769",
+    "[2] Learning to Compress Prompts with Gist Tokens (Mu, Li, Goodman; Stanford, NeurIPS 2023) — https://arxiv.org/abs/2304.08467",
+    "[3] AI Mother Tongue: Self-Emergent Communication in MARL — https://arxiv.org/pdf/2507.10566",
+    "[4] CELEBI: Compressive-Expressive Language Emergence — https://arxiv.org/html/2501.19182v3",
+    "[5] Neural Machine Translation of Rare Words with Subword Units (BPE; Sennrich et al., 2015) — https://arxiv.org/pdf/1508.07909",
+    "[6] Active Context Compression: Autonomous Memory Management in LLM Agents (Focus, 2026) — https://arxiv.org/abs/2601.07190",
+    "[7] LLMLingua (Microsoft) — https://llmlingua.com/llmlingua.html",
+    "[8] Clustering-driven Memory Compression for On-device LLMs — https://arxiv.org/pdf/2601.17443",
+    "[9] ARC-Encoder: learning compressed text representations for LLMs — https://arxiv.org/pdf/2510.20535",
+    "[10] Token Optimization guide (Burnwise) — https://www.burnwise.io/blog/token-optimization-guide"
+  ]
+}

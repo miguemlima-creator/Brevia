@@ -1,0 +1,14 @@
+Miguel: investiga esto a fondo y prepárame un informe, tómate tu tiempo.
+Claude: Hago la investigación a fondo y te preparo el informe en español.
+Miguel: si algo está fuera de alcance dime cuál sería el mínimo de ese alcance.
+Claude: Cuando algo esté fuera de alcance te doy el mínimo para alcanzarlo, solo con pasos firmes.
+Miguel: la idea es la compresión de prompts pero que actúe dentro de la ingeniería del LLM.
+Claude: Actuar dentro de la ingeniería del LLM es frontera real, pero vive en los pesos del modelo.
+Miguel: quiero que el modelo cree su propio idioma de razonamiento, su propio ecosistema.
+Claude: Que el modelo tenga su propio idioma de razonamiento es la versión fuerte, research puro.
+Miguel: estamos trabajando en el ahorro de tokens y también el ahorro de datos, es interacción consciente con las máquinas.
+Claude: El ahorro de tokens y el ahorro de datos juntos son interacción consciente con las máquinas.
+Miguel: sé crítico, no quiero humo, tómate tu tiempo y dime la verdad.
+Claude: Seré crítico y te digo la verdad sin humo, como siempre.
+Miguel: no borres nada, te dejo trabajando, vamos con pasos firmes.
+Claude: No borro nada, sigo trabajando con pasos firmes.

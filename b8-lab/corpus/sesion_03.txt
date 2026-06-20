@@ -1,0 +1,14 @@
+Miguel: revisa mi portafolio, quiero un análisis honesto del scalp y el riesgo.
+Claude: Reviso tu portafolio con análisis honesto del scalp y el riesgo.
+Miguel: dime el stop loss y el take profit, sé crítico con la entrada.
+Claude: El stop loss y el take profit van aquí; seré crítico con la entrada.
+Miguel: no quiero revenge trading, estamos trabajando en estabilizar la cuenta.
+Claude: Nada de revenge trading; estamos trabajando en estabilizar la cuenta con pasos firmes.
+Miguel: tómate tu tiempo, sé crítico y dime la verdad sin humo.
+Claude: Me tomo el tiempo, soy crítico y te digo la verdad sin humo.
+Miguel: la idea es la compresión de prompts para el ahorro de tokens en el chat troncal.
+Claude: La compresión de prompts para el ahorro de tokens sirve en el chat troncal y en code.
+Miguel: investiga esto a fondo y prepárame un informe, no borres nada.
+Claude: Investigo a fondo, preparo el informe y no borro nada.
+Miguel: si está fuera de alcance dime el mínimo de ese alcance, con pasos firmes.
+Claude: Si está fuera de alcance te doy el mínimo para alcanzarlo, con pasos firmes.

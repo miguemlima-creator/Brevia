@@ -1,0 +1,17 @@
+Hi, I was wondering if you could please help me with something. Thank you so much in advance.
+
+Necesito que tradúceme esto al inglés manteniendo el tono.
+
+Aquí está el documento:
+
+Large language models are priced per token. As adoption grows, the aggregate cost of tokens becomes a major operating expense for any company building on top of these systems. Reducing context size directly reduces both cost and bandwidth.
+
+Te lo pego otra vez por si acaso no te llegó completo:
+
+Large language models are priced per token. As adoption grows, the aggregate cost of tokens becomes a major operating expense for any company building on top of these systems. Reducing context size directly reduces both cost and bandwidth.
+
+Te lo pego otra vez por si acaso no te llegó completo:
+
+Large language models are priced per token. As adoption grows, the aggregate cost of tokens becomes a major operating expense for any company building on top of these systems. Reducing context size directly reduces both cost and bandwidth.
+
+Thank you so much, I really appreciate it. Best regards.

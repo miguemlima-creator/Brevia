@@ -1,0 +1,9 @@
+Hi, please help me / hola por favor ayúdame.
+
+Context in Spanish:
+El cambio climático y el consumo energético de los centros de datos están ligados. Cada byte transmitido y procesado tiene una huella. Por eso la eficiencia en el uso de modelos no es solo económica, es ambiental.
+
+Same idea in English:
+A well structured prompt gives the model exactly what it needs and nothing more. Redundant context, repeated documents, and verbose politeness all inflate the token count without improving the answer quality.
+
+review this and tell me if there are any problems. Thank you so much, muchas gracias.

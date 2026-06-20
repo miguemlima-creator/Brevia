@@ -1,0 +1,1 @@
+Convierte 25 grados Celsius a Fahrenheit y muestra la fórmula.

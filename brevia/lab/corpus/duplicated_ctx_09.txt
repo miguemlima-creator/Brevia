@@ -1,0 +1,13 @@
+Hola, buenas, la verdad es que me gustaría que por favor me ayudaras con algo si no es mucha molestia. Muchas gracias de antemano.
+
+Necesito que analiza este texto y dame la idea principal y un resumen corto.
+
+Aquí está el documento:
+
+El cambio climático y el consumo energético de los centros de datos están ligados. Cada byte transmitido y procesado tiene una huella. Por eso la eficiencia en el uso de modelos no es solo económica, es ambiental.
+
+Te lo pego otra vez por si acaso no te llegó completo:
+
+El cambio climático y el consumo energético de los centros de datos están ligados. Cada byte transmitido y procesado tiene una huella. Por eso la eficiencia en el uso de modelos no es solo económica, es ambiental.
+
+Gracias de antemano, un abrazo.

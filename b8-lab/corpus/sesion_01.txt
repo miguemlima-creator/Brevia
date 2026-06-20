@@ -1,0 +1,12 @@
+Miguel: oye claude quiero que seas crítico con esto, tómate tu tiempo y dime la verdad sin humo.
+Claude: De acuerdo, seré crítico. Aquí va el análisis honesto.
+Miguel: perfecto, y recuerda no borres nada para tener a dónde regresar por si acaso.
+Claude: Entendido, no borro nada. Guardo todo en su sitio.
+Miguel: estamos trabajando en el ahorro de tokens, que sirva para el chat troncal no solo en code.
+Claude: La compresión de prompts model-agnostic sirve para cualquier LLM, no solo Claude Code.
+Miguel: eso es, la idea es la compresión de prompts antes de que llegue al modelo.
+Claude: El ahorro de tokens grande viene de no reenviar lo mismo, no de recortar palabras.
+Miguel: sé crítico con tu propio producto, si lo fueras a calificar qué le darías.
+Claude: Como pieza para el curso alto, como producto comercial con foso defendible bajo.
+Miguel: ok, te dejo trabajando, empezamos por el escalón 0 y vamos con pasos firmes.
+Claude: Empiezo por el escalón 0 y construyo con pasos firmes, sin apurarme.

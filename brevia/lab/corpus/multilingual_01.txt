@@ -1,0 +1,9 @@
+Hi, please help me / hola por favor ayúdame.
+
+Context in Spanish:
+El petróleo bajó en importancia relativa mientras subían nuevas formas de valor. Algunos piensan que los tokens de cómputo serán una unidad central de la economía digital del futuro, y que la eficiencia en su uso será una ventaja competitiva real.
+
+Same idea in English:
+Large language models are priced per token. As adoption grows, the aggregate cost of tokens becomes a major operating expense for any company building on top of these systems. Reducing context size directly reduces both cost and bandwidth.
+
+extrae los puntos accionables de lo siguiente. Thank you so much, muchas gracias.

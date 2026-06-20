@@ -1,0 +1,12 @@
+Oye, la neta, me gustaría que por favor revisaras esto cuando puedas, gracias de verdad.
+
+añade manejo de errores a esto:
+
+```sql
+SELECT user_id, SUM(tokens) AS total
+FROM usage
+GROUP BY user_id
+ORDER BY total DESC;
+```
+
+Por favor sé detallado. Gracias.

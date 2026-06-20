@@ -1,0 +1,11 @@
+Hello, just wanted to ask, would you kindly help me out here? Thanks a lot.
+
+Quisiera saber si podrías explícame qué significa esto en palabras simples.
+
+Aquí está el texto:
+
+La inteligencia artificial está transformando la economía global. Los modelos de lenguaje grandes consumen una unidad de cómputo llamada token. Cada interacción tiene un costo en tokens, tanto de entrada como de salida. Optimizar su uso no es solo ahorrar dinero, también reduce el tráfico de datos y el consumo de energía.
+
+Por favor analízalo bien.
+
+De verdad mil gracias por tu tiempo y tu ayuda.

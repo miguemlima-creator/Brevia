@@ -1,0 +1,326 @@
+{
+  "seed": 42,
+  "total": 64,
+  "items": [
+    {
+      "file": "polite_verbose_01.txt",
+      "category": "polite_verbose",
+      "chars": 610
+    },
+    {
+      "file": "polite_verbose_02.txt",
+      "category": "polite_verbose",
+      "chars": 524
+    },
+    {
+      "file": "polite_verbose_03.txt",
+      "category": "polite_verbose",
+      "chars": 550
+    },
+    {
+      "file": "polite_verbose_04.txt",
+      "category": "polite_verbose",
+      "chars": 644
+    },
+    {
+      "file": "polite_verbose_05.txt",
+      "category": "polite_verbose",
+      "chars": 505
+    },
+    {
+      "file": "polite_verbose_06.txt",
+      "category": "polite_verbose",
+      "chars": 530
+    },
+    {
+      "file": "polite_verbose_07.txt",
+      "category": "polite_verbose",
+      "chars": 491
+    },
+    {
+      "file": "polite_verbose_08.txt",
+      "category": "polite_verbose",
+      "chars": 580
+    },
+    {
+      "file": "polite_verbose_09.txt",
+      "category": "polite_verbose",
+      "chars": 491
+    },
+    {
+      "file": "polite_verbose_10.txt",
+      "category": "polite_verbose",
+      "chars": 617
+    },
+    {
+      "file": "polite_verbose_11.txt",
+      "category": "polite_verbose",
+      "chars": 506
+    },
+    {
+      "file": "polite_verbose_12.txt",
+      "category": "polite_verbose",
+      "chars": 574
+    },
+    {
+      "file": "duplicated_ctx_01.txt",
+      "category": "duplicated_ctx",
+      "chars": 917
+    },
+    {
+      "file": "duplicated_ctx_02.txt",
+      "category": "duplicated_ctx",
+      "chars": 1104
+    },
+    {
+      "file": "duplicated_ctx_03.txt",
+      "category": "duplicated_ctx",
+      "chars": 958
+    },
+    {
+      "file": "duplicated_ctx_04.txt",
+      "category": "duplicated_ctx",
+      "chars": 781
+    },
+    {
+      "file": "duplicated_ctx_05.txt",
+      "category": "duplicated_ctx",
+      "chars": 738
+    },
+    {
+      "file": "duplicated_ctx_06.txt",
+      "category": "duplicated_ctx",
+      "chars": 1022
+    },
+    {
+      "file": "duplicated_ctx_07.txt",
+      "category": "duplicated_ctx",
+      "chars": 1071
+    },
+    {
+      "file": "duplicated_ctx_08.txt",
+      "category": "duplicated_ctx",
+      "chars": 712
+    },
+    {
+      "file": "duplicated_ctx_09.txt",
+      "category": "duplicated_ctx",
+      "chars": 752
+    },
+    {
+      "file": "duplicated_ctx_10.txt",
+      "category": "duplicated_ctx",
+      "chars": 707
+    },
+    {
+      "file": "duplicated_ctx_11.txt",
+      "category": "duplicated_ctx",
+      "chars": 960
+    },
+    {
+      "file": "duplicated_ctx_12.txt",
+      "category": "duplicated_ctx",
+      "chars": 718
+    },
+    {
+      "file": "code_heavy_01.txt",
+      "category": "code_heavy",
+      "chars": 253
+    },
+    {
+      "file": "code_heavy_02.txt",
+      "category": "code_heavy",
+      "chars": 249
+    },
+    {
+      "file": "code_heavy_03.txt",
+      "category": "code_heavy",
+      "chars": 236
+    },
+    {
+      "file": "code_heavy_04.txt",
+      "category": "code_heavy",
+      "chars": 268
+    },
+    {
+      "file": "code_heavy_05.txt",
+      "category": "code_heavy",
+      "chars": 306
+    },
+    {
+      "file": "code_heavy_06.txt",
+      "category": "code_heavy",
+      "chars": 273
+    },
+    {
+      "file": "code_heavy_07.txt",
+      "category": "code_heavy",
+      "chars": 254
+    },
+    {
+      "file": "code_heavy_08.txt",
+      "category": "code_heavy",
+      "chars": 254
+    },
+    {
+      "file": "already_tight_01.txt",
+      "category": "already_tight",
+      "chars": 39
+    },
+    {
+      "file": "already_tight_02.txt",
+      "category": "already_tight",
+      "chars": 62
+    },
+    {
+      "file": "already_tight_03.txt",
+      "category": "already_tight",
+      "chars": 39
+    },
+    {
+      "file": "already_tight_04.txt",
+      "category": "already_tight",
+      "chars": 62
+    },
+    {
+      "file": "already_tight_05.txt",
+      "category": "already_tight",
+      "chars": 65
+    },
+    {
+      "file": "already_tight_06.txt",
+      "category": "already_tight",
+      "chars": 62
+    },
+    {
+      "file": "already_tight_07.txt",
+      "category": "already_tight",
+      "chars": 89
+    },
+    {
+      "file": "already_tight_08.txt",
+      "category": "already_tight",
+      "chars": 89
+    },
+    {
+      "file": "already_tight_09.txt",
+      "category": "already_tight",
+      "chars": 62
+    },
+    {
+      "file": "already_tight_10.txt",
+      "category": "already_tight",
+      "chars": 65
+    },
+    {
+      "file": "long_document_01.txt",
+      "category": "long_document",
+      "chars": 1871
+    },
+    {
+      "file": "long_document_02.txt",
+      "category": "long_document",
+      "chars": 1292
+    },
+    {
+      "file": "long_document_03.txt",
+      "category": "long_document",
+      "chars": 2074
+    },
+    {
+      "file": "long_document_04.txt",
+      "category": "long_document",
+      "chars": 1391
+    },
+    {
+      "file": "long_document_05.txt",
+      "category": "long_document",
+      "chars": 1135
+    },
+    {
+      "file": "long_document_06.txt",
+      "category": "long_document",
+      "chars": 1830
+    },
+    {
+      "file": "long_document_07.txt",
+      "category": "long_document",
+      "chars": 1931
+    },
+    {
+      "file": "long_document_08.txt",
+      "category": "long_document",
+      "chars": 1660
+    },
+    {
+      "file": "multilingual_01.txt",
+      "category": "multilingual",
+      "chars": 659
+    },
+    {
+      "file": "multilingual_02.txt",
+      "category": "multilingual",
+      "chars": 633
+    },
+    {
+      "file": "multilingual_03.txt",
+      "category": "multilingual",
+      "chars": 599
+    },
+    {
+      "file": "multilingual_04.txt",
+      "category": "multilingual",
+      "chars": 735
+    },
+    {
+      "file": "multilingual_05.txt",
+      "category": "multilingual",
+      "chars": 598
+    },
+    {
+      "file": "multilingual_06.txt",
+      "category": "multilingual",
+      "chars": 594
+    },
+    {
+      "file": "chat_short_01.txt",
+      "category": "chat_short",
+      "chars": 33
+    },
+    {
+      "file": "chat_short_02.txt",
+      "category": "chat_short",
+      "chars": 23
+    },
+    {
+      "file": "chat_short_03.txt",
+      "category": "chat_short",
+      "chars": 59
+    },
+    {
+      "file": "chat_short_04.txt",
+      "category": "chat_short",
+      "chars": 22
+    },
+    {
+      "file": "chat_short_05.txt",
+      "category": "chat_short",
+      "chars": 22
+    },
+    {
+      "file": "chat_short_06.txt",
+      "category": "chat_short",
+      "chars": 46
+    },
+    {
+      "file": "chat_short_07.txt",
+      "category": "chat_short",
+      "chars": 25
+    },
+    {
+      "file": "chat_short_08.txt",
+      "category": "chat_short",
+      "chars": 46
+    }
+  ]
+}

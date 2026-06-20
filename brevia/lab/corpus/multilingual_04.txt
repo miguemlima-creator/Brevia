@@ -1,0 +1,9 @@
+Hi, please help me / hola por favor ayúdame.
+
+Context in Spanish:
+La inteligencia artificial está transformando la economía global. Los modelos de lenguaje grandes consumen una unidad de cómputo llamada token. Cada interacción tiene un costo en tokens, tanto de entrada como de salida. Optimizar su uso no es solo ahorrar dinero, también reduce el tráfico de datos y el consumo de energía.
+
+Same idea in English:
+Large language models are priced per token. As adoption grows, the aggregate cost of tokens becomes a major operating expense for any company building on top of these systems. Reducing context size directly reduces both cost and bandwidth.
+
+extrae los puntos accionables de lo siguiente. Thank you so much, muchas gracias.

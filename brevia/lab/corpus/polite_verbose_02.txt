@@ -1,0 +1,11 @@
+Hi, I was wondering if you could please help me with something. Thank you so much in advance.
+
+Quisiera saber si podrías summarize the following and list the key takeaways.
+
+Aquí está el texto:
+
+Large language models are priced per token. As adoption grows, the aggregate cost of tokens becomes a major operating expense for any company building on top of these systems. Reducing context size directly reduces both cost and bandwidth.
+
+Por favor analízalo bien.
+
+Muchas gracias, de verdad te lo agradezco muchísimo. Saludos.

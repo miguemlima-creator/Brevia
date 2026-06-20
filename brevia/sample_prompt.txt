@@ -1,0 +1,15 @@
+Hola, buenas, la verdad es que me gustaría que por favor me ayudaras con una cosa si no es mucha molestia. Muchas gracias de antemano.
+
+Quisiera saber si podrías analizar este texto que te voy a pegar y decirme cuál es la idea principal y un resumen corto.
+
+Aquí está el texto:
+
+La inteligencia artificial está transformando la economía global. Los modelos de lenguaje grandes consumen una unidad de cómputo llamada token. Cada interacción con un modelo tiene un costo en tokens, tanto de entrada como de salida. A medida que más empresas adoptan estas tecnologías, el costo agregado de los tokens se convierte en una partida importante de gasto operativo. Optimizar el uso de tokens no es solo ahorrar dinero, también reduce el tráfico de datos y el consumo de energía asociado a la transmisión y el procesamiento.
+
+Por favor analízalo bien.
+
+Te lo pego otra vez por si acaso no te llegó completo:
+
+La inteligencia artificial está transformando la economía global. Los modelos de lenguaje grandes consumen una unidad de cómputo llamada token. Cada interacción con un modelo tiene un costo en tokens, tanto de entrada como de salida. A medida que más empresas adoptan estas tecnologías, el costo agregado de los tokens se convierte en una partida importante de gasto operativo. Optimizar el uso de tokens no es solo ahorrar dinero, también reduce el tráfico de datos y el consumo de energía asociado a la transmisión y el procesamiento.
+
+Muchas gracias, de verdad te lo agradezco muchísimo. Saludos.

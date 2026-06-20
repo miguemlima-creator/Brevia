@@ -1,0 +1,5006 @@
+{
+  "n": 64,
+  "method": "heuristica char/4 (estimacion)",
+  "violations": [],
+  "global": {
+    "tokens_in": 8733,
+    "tokens_out_safe": 6816,
+    "tokens_out_aggressive": 6070,
+    "safe_mean_pct": 10.52,
+    "aggr_mean_pct": 19.16
+  },
+  "rows": [
+    {
+      "file": "polite_verbose_01.txt",
+      "category": "polite_verbose",
+      "mode": "safe",
+      "tokens_in": 143,
+      "tokens_out": 143,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 622,
+      "bytes_out": 622,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 143,
+          "tokens_despues": 143,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 143,
+          "tokens_despues": 143,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 143,
+          "tokens_despues": 143,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_01.txt",
+      "category": "polite_verbose",
+      "mode": "aggressive",
+      "tokens_in": 143,
+      "tokens_out": 108,
+      "saved": 35,
+      "pct": 24.5,
+      "bytes_in": 622,
+      "bytes_out": 477,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 143,
+          "tokens_despues": 143,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 143,
+          "tokens_despues": 143,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 143,
+          "tokens_despues": 143,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 143,
+          "tokens_despues": 108,
+          "ahorro": 35
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 108,
+          "tokens_despues": 108,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_02.txt",
+      "category": "polite_verbose",
+      "mode": "safe",
+      "tokens_in": 122,
+      "tokens_out": 122,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 529,
+      "bytes_out": 529,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 122,
+          "tokens_despues": 122,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 122,
+          "tokens_despues": 122,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 122,
+          "tokens_despues": 122,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_02.txt",
+      "category": "polite_verbose",
+      "mode": "aggressive",
+      "tokens_in": 122,
+      "tokens_out": 98,
+      "saved": 24,
+      "pct": 19.7,
+      "bytes_in": 529,
+      "bytes_out": 431,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 122,
+          "tokens_despues": 122,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 122,
+          "tokens_despues": 122,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 122,
+          "tokens_despues": 122,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 122,
+          "tokens_despues": 98,
+          "ahorro": 24
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 98,
+          "tokens_despues": 98,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_03.txt",
+      "category": "polite_verbose",
+      "mode": "safe",
+      "tokens_in": 131,
+      "tokens_out": 131,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 562,
+      "bytes_out": 562,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_03.txt",
+      "category": "polite_verbose",
+      "mode": "aggressive",
+      "tokens_in": 131,
+      "tokens_out": 101,
+      "saved": 30,
+      "pct": 22.9,
+      "bytes_in": 562,
+      "bytes_out": 438,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 131,
+          "tokens_despues": 101,
+          "ahorro": 30
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 101,
+          "tokens_despues": 101,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_04.txt",
+      "category": "polite_verbose",
+      "mode": "safe",
+      "tokens_in": 152,
+      "tokens_out": 152,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 657,
+      "bytes_out": 657,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 152,
+          "tokens_despues": 152,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 152,
+          "tokens_despues": 152,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 152,
+          "tokens_despues": 152,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_04.txt",
+      "category": "polite_verbose",
+      "mode": "aggressive",
+      "tokens_in": 152,
+      "tokens_out": 118,
+      "saved": 34,
+      "pct": 22.4,
+      "bytes_in": 657,
+      "bytes_out": 517,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 152,
+          "tokens_despues": 152,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 152,
+          "tokens_despues": 152,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 152,
+          "tokens_despues": 152,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 152,
+          "tokens_despues": 118,
+          "ahorro": 34
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 118,
+          "tokens_despues": 118,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_05.txt",
+      "category": "polite_verbose",
+      "mode": "safe",
+      "tokens_in": 118,
+      "tokens_out": 118,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 510,
+      "bytes_out": 510,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 118,
+          "tokens_despues": 118,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 118,
+          "tokens_despues": 118,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 118,
+          "tokens_despues": 118,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_05.txt",
+      "category": "polite_verbose",
+      "mode": "aggressive",
+      "tokens_in": 118,
+      "tokens_out": 103,
+      "saved": 15,
+      "pct": 12.7,
+      "bytes_in": 510,
+      "bytes_out": 446,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 118,
+          "tokens_despues": 118,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 118,
+          "tokens_despues": 118,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 118,
+          "tokens_despues": 118,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 118,
+          "tokens_despues": 103,
+          "ahorro": 15
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 103,
+          "tokens_despues": 103,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_06.txt",
+      "category": "polite_verbose",
+      "mode": "safe",
+      "tokens_in": 128,
+      "tokens_out": 128,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 541,
+      "bytes_out": 541,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 128,
+          "tokens_despues": 128,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 128,
+          "tokens_despues": 128,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 128,
+          "tokens_despues": 128,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_06.txt",
+      "category": "polite_verbose",
+      "mode": "aggressive",
+      "tokens_in": 128,
+      "tokens_out": 107,
+      "saved": 21,
+      "pct": 16.4,
+      "bytes_in": 541,
+      "bytes_out": 459,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 128,
+          "tokens_despues": 128,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 128,
+          "tokens_despues": 128,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 128,
+          "tokens_despues": 128,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 128,
+          "tokens_despues": 107,
+          "ahorro": 21
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 107,
+          "tokens_despues": 107,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_07.txt",
+      "category": "polite_verbose",
+      "mode": "safe",
+      "tokens_in": 118,
+      "tokens_out": 118,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 495,
+      "bytes_out": 495,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 118,
+          "tokens_despues": 118,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 118,
+          "tokens_despues": 118,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 118,
+          "tokens_despues": 118,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_07.txt",
+      "category": "polite_verbose",
+      "mode": "aggressive",
+      "tokens_in": 118,
+      "tokens_out": 104,
+      "saved": 14,
+      "pct": 11.9,
+      "bytes_in": 495,
+      "bytes_out": 438,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 118,
+          "tokens_despues": 118,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 118,
+          "tokens_despues": 118,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 118,
+          "tokens_despues": 118,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 118,
+          "tokens_despues": 104,
+          "ahorro": 14
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 104,
+          "tokens_despues": 104,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_08.txt",
+      "category": "polite_verbose",
+      "mode": "safe",
+      "tokens_in": 136,
+      "tokens_out": 136,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 593,
+      "bytes_out": 593,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 136,
+          "tokens_despues": 136,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 136,
+          "tokens_despues": 136,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 136,
+          "tokens_despues": 136,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_08.txt",
+      "category": "polite_verbose",
+      "mode": "aggressive",
+      "tokens_in": 136,
+      "tokens_out": 115,
+      "saved": 21,
+      "pct": 15.4,
+      "bytes_in": 593,
+      "bytes_out": 511,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 136,
+          "tokens_despues": 136,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 136,
+          "tokens_despues": 136,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 136,
+          "tokens_despues": 136,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 136,
+          "tokens_despues": 115,
+          "ahorro": 21
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 115,
+          "tokens_despues": 115,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_09.txt",
+      "category": "polite_verbose",
+      "mode": "safe",
+      "tokens_in": 117,
+      "tokens_out": 117,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 501,
+      "bytes_out": 501,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 117,
+          "tokens_despues": 117,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 117,
+          "tokens_despues": 117,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 117,
+          "tokens_despues": 117,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_09.txt",
+      "category": "polite_verbose",
+      "mode": "aggressive",
+      "tokens_in": 117,
+      "tokens_out": 91,
+      "saved": 26,
+      "pct": 22.2,
+      "bytes_in": 501,
+      "bytes_out": 400,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 117,
+          "tokens_despues": 117,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 117,
+          "tokens_despues": 117,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 117,
+          "tokens_despues": 117,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 117,
+          "tokens_despues": 92,
+          "ahorro": 25
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 92,
+          "tokens_despues": 92,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_10.txt",
+      "category": "polite_verbose",
+      "mode": "safe",
+      "tokens_in": 144,
+      "tokens_out": 144,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 631,
+      "bytes_out": 631,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 144,
+          "tokens_despues": 144,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 144,
+          "tokens_despues": 144,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 144,
+          "tokens_despues": 144,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_10.txt",
+      "category": "polite_verbose",
+      "mode": "aggressive",
+      "tokens_in": 144,
+      "tokens_out": 114,
+      "saved": 30,
+      "pct": 20.8,
+      "bytes_in": 631,
+      "bytes_out": 507,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 144,
+          "tokens_despues": 144,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 144,
+          "tokens_despues": 144,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 144,
+          "tokens_despues": 144,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 144,
+          "tokens_despues": 114,
+          "ahorro": 30
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 114,
+          "tokens_despues": 114,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_11.txt",
+      "category": "polite_verbose",
+      "mode": "safe",
+      "tokens_in": 122,
+      "tokens_out": 122,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 515,
+      "bytes_out": 515,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 122,
+          "tokens_despues": 122,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 122,
+          "tokens_despues": 122,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 122,
+          "tokens_despues": 122,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_11.txt",
+      "category": "polite_verbose",
+      "mode": "aggressive",
+      "tokens_in": 122,
+      "tokens_out": 111,
+      "saved": 11,
+      "pct": 9.0,
+      "bytes_in": 515,
+      "bytes_out": 467,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 122,
+          "tokens_despues": 122,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 122,
+          "tokens_despues": 122,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 122,
+          "tokens_despues": 122,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 122,
+          "tokens_despues": 111,
+          "ahorro": 11
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 111,
+          "tokens_despues": 111,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_12.txt",
+      "category": "polite_verbose",
+      "mode": "safe",
+      "tokens_in": 136,
+      "tokens_out": 136,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 587,
+      "bytes_out": 587,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 136,
+          "tokens_despues": 136,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 136,
+          "tokens_despues": 136,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 136,
+          "tokens_despues": 136,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "polite_verbose_12.txt",
+      "category": "polite_verbose",
+      "mode": "aggressive",
+      "tokens_in": 136,
+      "tokens_out": 122,
+      "saved": 14,
+      "pct": 10.3,
+      "bytes_in": 587,
+      "bytes_out": 530,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 136,
+          "tokens_despues": 136,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 136,
+          "tokens_despues": 136,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 136,
+          "tokens_despues": 136,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 136,
+          "tokens_despues": 122,
+          "ahorro": 14
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 122,
+          "tokens_despues": 122,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_01.txt",
+      "category": "duplicated_ctx",
+      "mode": "safe",
+      "tokens_in": 216,
+      "tokens_out": 141,
+      "saved": 75,
+      "pct": 34.7,
+      "bytes_in": 935,
+      "bytes_out": 603,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 216,
+          "tokens_despues": 141,
+          "ahorro": 75
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 141,
+          "tokens_despues": 141,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 141,
+          "tokens_despues": 141,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_01.txt",
+      "category": "duplicated_ctx",
+      "mode": "aggressive",
+      "tokens_in": 216,
+      "tokens_out": 127,
+      "saved": 89,
+      "pct": 41.2,
+      "bytes_in": 935,
+      "bytes_out": 546,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 216,
+          "tokens_despues": 141,
+          "ahorro": 75
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 141,
+          "tokens_despues": 141,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 141,
+          "tokens_despues": 141,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 141,
+          "tokens_despues": 127,
+          "ahorro": 14
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 127,
+          "tokens_despues": 127,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_02.txt",
+      "category": "duplicated_ctx",
+      "mode": "safe",
+      "tokens_in": 263,
+      "tokens_out": 131,
+      "saved": 132,
+      "pct": 50.2,
+      "bytes_in": 1132,
+      "bytes_out": 563,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 263,
+          "tokens_despues": 131,
+          "ahorro": 132
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_02.txt",
+      "category": "duplicated_ctx",
+      "mode": "aggressive",
+      "tokens_in": 263,
+      "tokens_out": 113,
+      "saved": 150,
+      "pct": 57.0,
+      "bytes_in": 1132,
+      "bytes_out": 493,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 263,
+          "tokens_despues": 131,
+          "ahorro": 132
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 131,
+          "tokens_despues": 113,
+          "ahorro": 18
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 113,
+          "tokens_despues": 113,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_03.txt",
+      "category": "duplicated_ctx",
+      "mode": "safe",
+      "tokens_in": 223,
+      "tokens_out": 148,
+      "saved": 75,
+      "pct": 33.6,
+      "bytes_in": 977,
+      "bytes_out": 645,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 223,
+          "tokens_despues": 148,
+          "ahorro": 75
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 148,
+          "tokens_despues": 148,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 148,
+          "tokens_despues": 148,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_03.txt",
+      "category": "duplicated_ctx",
+      "mode": "aggressive",
+      "tokens_in": 223,
+      "tokens_out": 140,
+      "saved": 83,
+      "pct": 37.2,
+      "bytes_in": 977,
+      "bytes_out": 609,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 223,
+          "tokens_despues": 148,
+          "ahorro": 75
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 148,
+          "tokens_despues": 148,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 148,
+          "tokens_despues": 148,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 148,
+          "tokens_despues": 140,
+          "ahorro": 8
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 140,
+          "tokens_despues": 140,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_04.txt",
+      "category": "duplicated_ctx",
+      "mode": "safe",
+      "tokens_in": 184,
+      "tokens_out": 128,
+      "saved": 56,
+      "pct": 30.4,
+      "bytes_in": 785,
+      "bytes_out": 544,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 184,
+          "tokens_despues": 128,
+          "ahorro": 56
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 128,
+          "tokens_despues": 128,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 128,
+          "tokens_despues": 128,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_04.txt",
+      "category": "duplicated_ctx",
+      "mode": "aggressive",
+      "tokens_in": 184,
+      "tokens_out": 124,
+      "saved": 60,
+      "pct": 32.6,
+      "bytes_in": 785,
+      "bytes_out": 524,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 184,
+          "tokens_despues": 128,
+          "ahorro": 56
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 128,
+          "tokens_despues": 128,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 128,
+          "tokens_despues": 128,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 128,
+          "tokens_despues": 124,
+          "ahorro": 4
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 124,
+          "tokens_despues": 124,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_05.txt",
+      "category": "duplicated_ctx",
+      "mode": "safe",
+      "tokens_in": 177,
+      "tokens_out": 125,
+      "saved": 52,
+      "pct": 29.4,
+      "bytes_in": 750,
+      "bytes_out": 531,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 177,
+          "tokens_despues": 125,
+          "ahorro": 52
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 125,
+          "tokens_despues": 125,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 125,
+          "tokens_despues": 125,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_05.txt",
+      "category": "duplicated_ctx",
+      "mode": "aggressive",
+      "tokens_in": 177,
+      "tokens_out": 116,
+      "saved": 61,
+      "pct": 34.5,
+      "bytes_in": 750,
+      "bytes_out": 492,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 177,
+          "tokens_despues": 125,
+          "ahorro": 52
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 125,
+          "tokens_despues": 125,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 125,
+          "tokens_despues": 125,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 125,
+          "tokens_despues": 116,
+          "ahorro": 9
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 116,
+          "tokens_despues": 116,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_06.txt",
+      "category": "duplicated_ctx",
+      "mode": "safe",
+      "tokens_in": 249,
+      "tokens_out": 131,
+      "saved": 118,
+      "pct": 47.4,
+      "bytes_in": 1039,
+      "bytes_out": 544,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 249,
+          "tokens_despues": 131,
+          "ahorro": 118
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_06.txt",
+      "category": "duplicated_ctx",
+      "mode": "aggressive",
+      "tokens_in": 249,
+      "tokens_out": 107,
+      "saved": 142,
+      "pct": 57.0,
+      "bytes_in": 1039,
+      "bytes_out": 448,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 249,
+          "tokens_despues": 131,
+          "ahorro": 118
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 131,
+          "tokens_despues": 107,
+          "ahorro": 24
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 107,
+          "tokens_despues": 107,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_07.txt",
+      "category": "duplicated_ctx",
+      "mode": "safe",
+      "tokens_in": 253,
+      "tokens_out": 127,
+      "saved": 126,
+      "pct": 49.8,
+      "bytes_in": 1077,
+      "bytes_out": 538,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 253,
+          "tokens_despues": 127,
+          "ahorro": 126
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 127,
+          "tokens_despues": 127,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 127,
+          "tokens_despues": 127,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_07.txt",
+      "category": "duplicated_ctx",
+      "mode": "aggressive",
+      "tokens_in": 253,
+      "tokens_out": 108,
+      "saved": 145,
+      "pct": 57.3,
+      "bytes_in": 1077,
+      "bytes_out": 465,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 253,
+          "tokens_despues": 127,
+          "ahorro": 126
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 127,
+          "tokens_despues": 127,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 127,
+          "tokens_despues": 127,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 127,
+          "tokens_despues": 108,
+          "ahorro": 19
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 108,
+          "tokens_despues": 108,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_08.txt",
+      "category": "duplicated_ctx",
+      "mode": "safe",
+      "tokens_in": 166,
+      "tokens_out": 119,
+      "saved": 47,
+      "pct": 28.3,
+      "bytes_in": 716,
+      "bytes_out": 506,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 166,
+          "tokens_despues": 119,
+          "ahorro": 47
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 119,
+          "tokens_despues": 119,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 119,
+          "tokens_despues": 119,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_08.txt",
+      "category": "duplicated_ctx",
+      "mode": "aggressive",
+      "tokens_in": 166,
+      "tokens_out": 105,
+      "saved": 61,
+      "pct": 36.7,
+      "bytes_in": 716,
+      "bytes_out": 451,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 166,
+          "tokens_despues": 119,
+          "ahorro": 47
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 119,
+          "tokens_despues": 119,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 119,
+          "tokens_despues": 119,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 119,
+          "tokens_despues": 105,
+          "ahorro": 14
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 105,
+          "tokens_despues": 105,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_09.txt",
+      "category": "duplicated_ctx",
+      "mode": "safe",
+      "tokens_in": 183,
+      "tokens_out": 131,
+      "saved": 52,
+      "pct": 28.4,
+      "bytes_in": 764,
+      "bytes_out": 545,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 183,
+          "tokens_despues": 131,
+          "ahorro": 52
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_09.txt",
+      "category": "duplicated_ctx",
+      "mode": "aggressive",
+      "tokens_in": 183,
+      "tokens_out": 103,
+      "saved": 80,
+      "pct": 43.7,
+      "bytes_in": 764,
+      "bytes_out": 428,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 183,
+          "tokens_despues": 131,
+          "ahorro": 52
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 131,
+          "tokens_despues": 131,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 131,
+          "tokens_despues": 103,
+          "ahorro": 28
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 103,
+          "tokens_despues": 103,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_10.txt",
+      "category": "duplicated_ctx",
+      "mode": "safe",
+      "tokens_in": 165,
+      "tokens_out": 118,
+      "saved": 47,
+      "pct": 28.5,
+      "bytes_in": 712,
+      "bytes_out": 502,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 165,
+          "tokens_despues": 118,
+          "ahorro": 47
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 118,
+          "tokens_despues": 118,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 118,
+          "tokens_despues": 118,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_10.txt",
+      "category": "duplicated_ctx",
+      "mode": "aggressive",
+      "tokens_in": 165,
+      "tokens_out": 104,
+      "saved": 61,
+      "pct": 37.0,
+      "bytes_in": 712,
+      "bytes_out": 448,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 165,
+          "tokens_despues": 118,
+          "ahorro": 47
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 118,
+          "tokens_despues": 118,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 118,
+          "tokens_despues": 118,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 118,
+          "tokens_despues": 104,
+          "ahorro": 14
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 104,
+          "tokens_despues": 104,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_11.txt",
+      "category": "duplicated_ctx",
+      "mode": "safe",
+      "tokens_in": 233,
+      "tokens_out": 115,
+      "saved": 118,
+      "pct": 50.6,
+      "bytes_in": 976,
+      "bytes_out": 481,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 233,
+          "tokens_despues": 115,
+          "ahorro": 118
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 115,
+          "tokens_despues": 115,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 115,
+          "tokens_despues": 115,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_11.txt",
+      "category": "duplicated_ctx",
+      "mode": "aggressive",
+      "tokens_in": 233,
+      "tokens_out": 108,
+      "saved": 125,
+      "pct": 53.6,
+      "bytes_in": 976,
+      "bytes_out": 452,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 233,
+          "tokens_despues": 115,
+          "ahorro": 118
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 115,
+          "tokens_despues": 115,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 115,
+          "tokens_despues": 115,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 115,
+          "tokens_despues": 108,
+          "ahorro": 7
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 108,
+          "tokens_despues": 108,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_12.txt",
+      "category": "duplicated_ctx",
+      "mode": "safe",
+      "tokens_in": 167,
+      "tokens_out": 120,
+      "saved": 47,
+      "pct": 28.1,
+      "bytes_in": 721,
+      "bytes_out": 511,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 167,
+          "tokens_despues": 120,
+          "ahorro": 47
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 120,
+          "tokens_despues": 120,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 120,
+          "tokens_despues": 120,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "duplicated_ctx_12.txt",
+      "category": "duplicated_ctx",
+      "mode": "aggressive",
+      "tokens_in": 167,
+      "tokens_out": 101,
+      "saved": 66,
+      "pct": 39.5,
+      "bytes_in": 721,
+      "bytes_out": 438,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 167,
+          "tokens_despues": 120,
+          "ahorro": 47
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 120,
+          "tokens_despues": 120,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 120,
+          "tokens_despues": 120,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 120,
+          "tokens_despues": 101,
+          "ahorro": 19
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 101,
+          "tokens_despues": 101,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "code_heavy_01.txt",
+      "category": "code_heavy",
+      "mode": "safe",
+      "tokens_in": 60,
+      "tokens_out": 60,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 256,
+      "bytes_out": 256,
+      "code_blocks": 1,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 39,
+          "tokens_despues": 39,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 39,
+          "tokens_despues": 39,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 39,
+          "tokens_despues": 39,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "code_heavy_01.txt",
+      "category": "code_heavy",
+      "mode": "aggressive",
+      "tokens_in": 60,
+      "tokens_out": 48,
+      "saved": 12,
+      "pct": 20.0,
+      "bytes_in": 256,
+      "bytes_out": 210,
+      "code_blocks": 1,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 39,
+          "tokens_despues": 39,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 39,
+          "tokens_despues": 39,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 39,
+          "tokens_despues": 39,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 39,
+          "tokens_despues": 27,
+          "ahorro": 12
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 27,
+          "tokens_despues": 27,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "code_heavy_02.txt",
+      "category": "code_heavy",
+      "mode": "safe",
+      "tokens_in": 56,
+      "tokens_out": 56,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 252,
+      "bytes_out": 252,
+      "code_blocks": 1,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 39,
+          "tokens_despues": 39,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 39,
+          "tokens_despues": 39,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 39,
+          "tokens_despues": 39,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "code_heavy_02.txt",
+      "category": "code_heavy",
+      "mode": "aggressive",
+      "tokens_in": 56,
+      "tokens_out": 44,
+      "saved": 12,
+      "pct": 21.4,
+      "bytes_in": 252,
+      "bytes_out": 206,
+      "code_blocks": 1,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 39,
+          "tokens_despues": 39,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 39,
+          "tokens_despues": 39,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 39,
+          "tokens_despues": 39,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 39,
+          "tokens_despues": 27,
+          "ahorro": 12
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 27,
+          "tokens_despues": 27,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "code_heavy_03.txt",
+      "category": "code_heavy",
+      "mode": "safe",
+      "tokens_in": 54,
+      "tokens_out": 54,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 238,
+      "bytes_out": 238,
+      "code_blocks": 1,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 37,
+          "tokens_despues": 37,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 37,
+          "tokens_despues": 37,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 37,
+          "tokens_despues": 37,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "code_heavy_03.txt",
+      "category": "code_heavy",
+      "mode": "aggressive",
+      "tokens_in": 54,
+      "tokens_out": 45,
+      "saved": 9,
+      "pct": 16.7,
+      "bytes_in": 238,
+      "bytes_out": 199,
+      "code_blocks": 1,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 37,
+          "tokens_despues": 37,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 37,
+          "tokens_despues": 37,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 37,
+          "tokens_despues": 37,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 37,
+          "tokens_despues": 28,
+          "ahorro": 9
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 28,
+          "tokens_despues": 28,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "code_heavy_04.txt",
+      "category": "code_heavy",
+      "mode": "safe",
+      "tokens_in": 62,
+      "tokens_out": 62,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 271,
+      "bytes_out": 271,
+      "code_blocks": 1,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 45,
+          "tokens_despues": 45,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 45,
+          "tokens_despues": 45,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 45,
+          "tokens_despues": 45,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "code_heavy_04.txt",
+      "category": "code_heavy",
+      "mode": "aggressive",
+      "tokens_in": 62,
+      "tokens_out": 46,
+      "saved": 16,
+      "pct": 25.8,
+      "bytes_in": 271,
+      "bytes_out": 207,
+      "code_blocks": 1,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 45,
+          "tokens_despues": 45,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 45,
+          "tokens_despues": 45,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 45,
+          "tokens_despues": 45,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 45,
+          "tokens_despues": 29,
+          "ahorro": 16
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 29,
+          "tokens_despues": 29,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "code_heavy_05.txt",
+      "category": "code_heavy",
+      "mode": "safe",
+      "tokens_in": 73,
+      "tokens_out": 73,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 308,
+      "bytes_out": 308,
+      "code_blocks": 1,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 52,
+          "tokens_despues": 52,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 52,
+          "tokens_despues": 52,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 52,
+          "tokens_despues": 52,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "code_heavy_05.txt",
+      "category": "code_heavy",
+      "mode": "aggressive",
+      "tokens_in": 73,
+      "tokens_out": 46,
+      "saved": 27,
+      "pct": 37.0,
+      "bytes_in": 308,
+      "bytes_out": 202,
+      "code_blocks": 1,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 52,
+          "tokens_despues": 52,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 52,
+          "tokens_despues": 52,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 52,
+          "tokens_despues": 52,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 52,
+          "tokens_despues": 26,
+          "ahorro": 26
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 26,
+          "tokens_despues": 26,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "code_heavy_06.txt",
+      "category": "code_heavy",
+      "mode": "safe",
+      "tokens_in": 64,
+      "tokens_out": 64,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 276,
+      "bytes_out": 276,
+      "code_blocks": 1,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 45,
+          "tokens_despues": 45,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 45,
+          "tokens_despues": 45,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 45,
+          "tokens_despues": 45,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "code_heavy_06.txt",
+      "category": "code_heavy",
+      "mode": "aggressive",
+      "tokens_in": 64,
+      "tokens_out": 47,
+      "saved": 17,
+      "pct": 26.6,
+      "bytes_in": 276,
+      "bytes_out": 212,
+      "code_blocks": 1,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 45,
+          "tokens_despues": 45,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 45,
+          "tokens_despues": 45,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 45,
+          "tokens_despues": 45,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 45,
+          "tokens_despues": 29,
+          "ahorro": 16
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 29,
+          "tokens_despues": 29,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "code_heavy_07.txt",
+      "category": "code_heavy",
+      "mode": "safe",
+      "tokens_in": 62,
+      "tokens_out": 62,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 257,
+      "bytes_out": 257,
+      "code_blocks": 1,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 41,
+          "tokens_despues": 41,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 41,
+          "tokens_despues": 41,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 41,
+          "tokens_despues": 41,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "code_heavy_07.txt",
+      "category": "code_heavy",
+      "mode": "aggressive",
+      "tokens_in": 62,
+      "tokens_out": 52,
+      "saved": 10,
+      "pct": 16.1,
+      "bytes_in": 257,
+      "bytes_out": 218,
+      "code_blocks": 1,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 41,
+          "tokens_despues": 41,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 41,
+          "tokens_despues": 41,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 41,
+          "tokens_despues": 41,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 41,
+          "tokens_despues": 31,
+          "ahorro": 10
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 31,
+          "tokens_despues": 31,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "code_heavy_08.txt",
+      "category": "code_heavy",
+      "mode": "safe",
+      "tokens_in": 62,
+      "tokens_out": 62,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 257,
+      "bytes_out": 257,
+      "code_blocks": 1,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 41,
+          "tokens_despues": 41,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 41,
+          "tokens_despues": 41,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 41,
+          "tokens_despues": 41,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "code_heavy_08.txt",
+      "category": "code_heavy",
+      "mode": "aggressive",
+      "tokens_in": 62,
+      "tokens_out": 52,
+      "saved": 10,
+      "pct": 16.1,
+      "bytes_in": 257,
+      "bytes_out": 218,
+      "code_blocks": 1,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 41,
+          "tokens_despues": 41,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 41,
+          "tokens_despues": 41,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 41,
+          "tokens_despues": 41,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 41,
+          "tokens_despues": 31,
+          "ahorro": 10
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 31,
+          "tokens_despues": 31,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_01.txt",
+      "category": "already_tight",
+      "mode": "safe",
+      "tokens_in": 10,
+      "tokens_out": 10,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 39,
+      "bytes_out": 39,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 10,
+          "tokens_despues": 10,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 10,
+          "tokens_despues": 10,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 10,
+          "tokens_despues": 10,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_01.txt",
+      "category": "already_tight",
+      "mode": "aggressive",
+      "tokens_in": 10,
+      "tokens_out": 10,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 39,
+      "bytes_out": 39,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 10,
+          "tokens_despues": 10,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 10,
+          "tokens_despues": 10,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 10,
+          "tokens_despues": 10,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 10,
+          "tokens_despues": 10,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 10,
+          "tokens_despues": 10,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_02.txt",
+      "category": "already_tight",
+      "mode": "safe",
+      "tokens_in": 14,
+      "tokens_out": 14,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 63,
+      "bytes_out": 63,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_02.txt",
+      "category": "already_tight",
+      "mode": "aggressive",
+      "tokens_in": 14,
+      "tokens_out": 14,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 63,
+      "bytes_out": 63,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_03.txt",
+      "category": "already_tight",
+      "mode": "safe",
+      "tokens_in": 10,
+      "tokens_out": 10,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 39,
+      "bytes_out": 39,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 10,
+          "tokens_despues": 10,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 10,
+          "tokens_despues": 10,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 10,
+          "tokens_despues": 10,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_03.txt",
+      "category": "already_tight",
+      "mode": "aggressive",
+      "tokens_in": 10,
+      "tokens_out": 10,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 39,
+      "bytes_out": 39,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 10,
+          "tokens_despues": 10,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 10,
+          "tokens_despues": 10,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 10,
+          "tokens_despues": 10,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 10,
+          "tokens_despues": 10,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 10,
+          "tokens_despues": 10,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_04.txt",
+      "category": "already_tight",
+      "mode": "safe",
+      "tokens_in": 14,
+      "tokens_out": 14,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 63,
+      "bytes_out": 63,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_04.txt",
+      "category": "already_tight",
+      "mode": "aggressive",
+      "tokens_in": 14,
+      "tokens_out": 14,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 63,
+      "bytes_out": 63,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_05.txt",
+      "category": "already_tight",
+      "mode": "safe",
+      "tokens_in": 14,
+      "tokens_out": 14,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 65,
+      "bytes_out": 65,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_05.txt",
+      "category": "already_tight",
+      "mode": "aggressive",
+      "tokens_in": 14,
+      "tokens_out": 14,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 65,
+      "bytes_out": 65,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_06.txt",
+      "category": "already_tight",
+      "mode": "safe",
+      "tokens_in": 14,
+      "tokens_out": 14,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 63,
+      "bytes_out": 63,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_06.txt",
+      "category": "already_tight",
+      "mode": "aggressive",
+      "tokens_in": 14,
+      "tokens_out": 14,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 63,
+      "bytes_out": 63,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_07.txt",
+      "category": "already_tight",
+      "mode": "safe",
+      "tokens_in": 22,
+      "tokens_out": 22,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 90,
+      "bytes_out": 90,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 22,
+          "tokens_despues": 22,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 22,
+          "tokens_despues": 22,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 22,
+          "tokens_despues": 22,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_07.txt",
+      "category": "already_tight",
+      "mode": "aggressive",
+      "tokens_in": 22,
+      "tokens_out": 22,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 90,
+      "bytes_out": 90,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 22,
+          "tokens_despues": 22,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 22,
+          "tokens_despues": 22,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 22,
+          "tokens_despues": 22,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 22,
+          "tokens_despues": 22,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 22,
+          "tokens_despues": 22,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_08.txt",
+      "category": "already_tight",
+      "mode": "safe",
+      "tokens_in": 22,
+      "tokens_out": 22,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 90,
+      "bytes_out": 90,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 22,
+          "tokens_despues": 22,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 22,
+          "tokens_despues": 22,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 22,
+          "tokens_despues": 22,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_08.txt",
+      "category": "already_tight",
+      "mode": "aggressive",
+      "tokens_in": 22,
+      "tokens_out": 22,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 90,
+      "bytes_out": 90,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 22,
+          "tokens_despues": 22,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 22,
+          "tokens_despues": 22,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 22,
+          "tokens_despues": 22,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 22,
+          "tokens_despues": 22,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 22,
+          "tokens_despues": 22,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_09.txt",
+      "category": "already_tight",
+      "mode": "safe",
+      "tokens_in": 14,
+      "tokens_out": 14,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 63,
+      "bytes_out": 63,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_09.txt",
+      "category": "already_tight",
+      "mode": "aggressive",
+      "tokens_in": 14,
+      "tokens_out": 14,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 63,
+      "bytes_out": 63,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_10.txt",
+      "category": "already_tight",
+      "mode": "safe",
+      "tokens_in": 14,
+      "tokens_out": 14,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 65,
+      "bytes_out": 65,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "already_tight_10.txt",
+      "category": "already_tight",
+      "mode": "aggressive",
+      "tokens_in": 14,
+      "tokens_out": 14,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 65,
+      "bytes_out": 65,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 14,
+          "tokens_despues": 14,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "long_document_01.txt",
+      "category": "long_document",
+      "mode": "safe",
+      "tokens_in": 437,
+      "tokens_out": 287,
+      "saved": 150,
+      "pct": 34.3,
+      "bytes_in": 1891,
+      "bytes_out": 1243,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 437,
+          "tokens_despues": 287,
+          "ahorro": 150
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 287,
+          "tokens_despues": 287,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 287,
+          "tokens_despues": 287,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "long_document_01.txt",
+      "category": "long_document",
+      "mode": "aggressive",
+      "tokens_in": 437,
+      "tokens_out": 282,
+      "saved": 155,
+      "pct": 35.5,
+      "bytes_in": 1891,
+      "bytes_out": 1223,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 437,
+          "tokens_despues": 287,
+          "ahorro": 150
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 287,
+          "tokens_despues": 287,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 287,
+          "tokens_despues": 287,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 287,
+          "tokens_despues": 282,
+          "ahorro": 5
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 282,
+          "tokens_despues": 282,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "long_document_02.txt",
+      "category": "long_document",
+      "mode": "safe",
+      "tokens_in": 304,
+      "tokens_out": 245,
+      "saved": 59,
+      "pct": 19.4,
+      "bytes_in": 1318,
+      "bytes_out": 1062,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 304,
+          "tokens_despues": 245,
+          "ahorro": 59
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 245,
+          "tokens_despues": 245,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 245,
+          "tokens_despues": 245,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "long_document_02.txt",
+      "category": "long_document",
+      "mode": "aggressive",
+      "tokens_in": 304,
+      "tokens_out": 236,
+      "saved": 68,
+      "pct": 22.4,
+      "bytes_in": 1318,
+      "bytes_out": 1023,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 304,
+          "tokens_despues": 245,
+          "ahorro": 59
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 245,
+          "tokens_despues": 245,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 245,
+          "tokens_despues": 245,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 245,
+          "tokens_despues": 236,
+          "ahorro": 9
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 236,
+          "tokens_despues": 236,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "long_document_03.txt",
+      "category": "long_document",
+      "mode": "safe",
+      "tokens_in": 483,
+      "tokens_out": 291,
+      "saved": 192,
+      "pct": 39.8,
+      "bytes_in": 2116,
+      "bytes_out": 1272,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 483,
+          "tokens_despues": 291,
+          "ahorro": 192
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 291,
+          "tokens_despues": 291,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 291,
+          "tokens_despues": 291,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "long_document_03.txt",
+      "category": "long_document",
+      "mode": "aggressive",
+      "tokens_in": 483,
+      "tokens_out": 282,
+      "saved": 201,
+      "pct": 41.6,
+      "bytes_in": 2116,
+      "bytes_out": 1233,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 483,
+          "tokens_despues": 291,
+          "ahorro": 192
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 291,
+          "tokens_despues": 291,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 291,
+          "tokens_despues": 291,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 291,
+          "tokens_despues": 282,
+          "ahorro": 9
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 282,
+          "tokens_despues": 282,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "long_document_04.txt",
+      "category": "long_document",
+      "mode": "safe",
+      "tokens_in": 325,
+      "tokens_out": 250,
+      "saved": 75,
+      "pct": 23.1,
+      "bytes_in": 1413,
+      "bytes_out": 1081,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 325,
+          "tokens_despues": 250,
+          "ahorro": 75
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 250,
+          "tokens_despues": 250,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 250,
+          "tokens_despues": 250,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "long_document_04.txt",
+      "category": "long_document",
+      "mode": "aggressive",
+      "tokens_in": 325,
+      "tokens_out": 236,
+      "saved": 89,
+      "pct": 27.4,
+      "bytes_in": 1413,
+      "bytes_out": 1026,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 325,
+          "tokens_despues": 250,
+          "ahorro": 75
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 250,
+          "tokens_despues": 250,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 250,
+          "tokens_despues": 250,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 250,
+          "tokens_despues": 236,
+          "ahorro": 14
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 236,
+          "tokens_despues": 236,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "long_document_05.txt",
+      "category": "long_document",
+      "mode": "safe",
+      "tokens_in": 266,
+      "tokens_out": 266,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 1148,
+      "bytes_out": 1148,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 266,
+          "tokens_despues": 266,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 266,
+          "tokens_despues": 266,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 266,
+          "tokens_despues": 266,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "long_document_05.txt",
+      "category": "long_document",
+      "mode": "aggressive",
+      "tokens_in": 266,
+      "tokens_out": 254,
+      "saved": 12,
+      "pct": 4.5,
+      "bytes_in": 1148,
+      "bytes_out": 1100,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 266,
+          "tokens_despues": 266,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 266,
+          "tokens_despues": 266,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 266,
+          "tokens_despues": 266,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 266,
+          "tokens_despues": 254,
+          "ahorro": 12
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 254,
+          "tokens_despues": 254,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "long_document_06.txt",
+      "category": "long_document",
+      "mode": "safe",
+      "tokens_in": 425,
+      "tokens_out": 272,
+      "saved": 153,
+      "pct": 36.0,
+      "bytes_in": 1846,
+      "bytes_out": 1176,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 425,
+          "tokens_despues": 272,
+          "ahorro": 153
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 272,
+          "tokens_despues": 272,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 272,
+          "tokens_despues": 272,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "long_document_06.txt",
+      "category": "long_document",
+      "mode": "aggressive",
+      "tokens_in": 425,
+      "tokens_out": 254,
+      "saved": 171,
+      "pct": 40.2,
+      "bytes_in": 1846,
+      "bytes_out": 1106,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 425,
+          "tokens_despues": 272,
+          "ahorro": 153
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 272,
+          "tokens_despues": 272,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 272,
+          "tokens_despues": 272,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 272,
+          "tokens_despues": 254,
+          "ahorro": 18
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 254,
+          "tokens_despues": 254,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "long_document_07.txt",
+      "category": "long_document",
+      "mode": "safe",
+      "tokens_in": 453,
+      "tokens_out": 261,
+      "saved": 192,
+      "pct": 42.4,
+      "bytes_in": 1967,
+      "bytes_out": 1123,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 453,
+          "tokens_despues": 261,
+          "ahorro": 192
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 261,
+          "tokens_despues": 261,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 261,
+          "tokens_despues": 261,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "long_document_07.txt",
+      "category": "long_document",
+      "mode": "aggressive",
+      "tokens_in": 453,
+      "tokens_out": 232,
+      "saved": 221,
+      "pct": 48.8,
+      "bytes_in": 1967,
+      "bytes_out": 1008,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 453,
+          "tokens_despues": 261,
+          "ahorro": 192
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 261,
+          "tokens_despues": 261,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 261,
+          "tokens_despues": 261,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 261,
+          "tokens_despues": 232,
+          "ahorro": 29
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 232,
+          "tokens_despues": 232,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "long_document_08.txt",
+      "category": "long_document",
+      "mode": "safe",
+      "tokens_in": 390,
+      "tokens_out": 239,
+      "saved": 151,
+      "pct": 38.7,
+      "bytes_in": 1692,
+      "bytes_out": 1028,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 390,
+          "tokens_despues": 239,
+          "ahorro": 151
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 239,
+          "tokens_despues": 239,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 239,
+          "tokens_despues": 239,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "long_document_08.txt",
+      "category": "long_document",
+      "mode": "aggressive",
+      "tokens_in": 390,
+      "tokens_out": 227,
+      "saved": 163,
+      "pct": 41.8,
+      "bytes_in": 1692,
+      "bytes_out": 980,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 390,
+          "tokens_despues": 239,
+          "ahorro": 151
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 239,
+          "tokens_despues": 239,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 239,
+          "tokens_despues": 239,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 239,
+          "tokens_despues": 227,
+          "ahorro": 12
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 227,
+          "tokens_despues": 227,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "multilingual_01.txt",
+      "category": "multilingual",
+      "mode": "safe",
+      "tokens_in": 154,
+      "tokens_out": 154,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 667,
+      "bytes_out": 667,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 154,
+          "tokens_despues": 154,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 154,
+          "tokens_despues": 154,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 154,
+          "tokens_despues": 154,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "multilingual_01.txt",
+      "category": "multilingual",
+      "mode": "aggressive",
+      "tokens_in": 154,
+      "tokens_out": 142,
+      "saved": 12,
+      "pct": 7.8,
+      "bytes_in": 667,
+      "bytes_out": 616,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 154,
+          "tokens_despues": 154,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 154,
+          "tokens_despues": 154,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 154,
+          "tokens_despues": 154,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 154,
+          "tokens_despues": 142,
+          "ahorro": 12
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 142,
+          "tokens_despues": 142,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "multilingual_02.txt",
+      "category": "multilingual",
+      "mode": "safe",
+      "tokens_in": 147,
+      "tokens_out": 147,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 641,
+      "bytes_out": 641,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 147,
+          "tokens_despues": 147,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 147,
+          "tokens_despues": 147,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 147,
+          "tokens_despues": 147,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "multilingual_02.txt",
+      "category": "multilingual",
+      "mode": "aggressive",
+      "tokens_in": 147,
+      "tokens_out": 135,
+      "saved": 12,
+      "pct": 8.2,
+      "bytes_in": 641,
+      "bytes_out": 590,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 147,
+          "tokens_despues": 147,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 147,
+          "tokens_despues": 147,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 147,
+          "tokens_despues": 147,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 147,
+          "tokens_despues": 135,
+          "ahorro": 12
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 135,
+          "tokens_despues": 135,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "multilingual_03.txt",
+      "category": "multilingual",
+      "mode": "safe",
+      "tokens_in": 140,
+      "tokens_out": 140,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 604,
+      "bytes_out": 604,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 140,
+          "tokens_despues": 140,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 140,
+          "tokens_despues": 140,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 140,
+          "tokens_despues": 140,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "multilingual_03.txt",
+      "category": "multilingual",
+      "mode": "aggressive",
+      "tokens_in": 140,
+      "tokens_out": 128,
+      "saved": 12,
+      "pct": 8.6,
+      "bytes_in": 604,
+      "bytes_out": 553,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 140,
+          "tokens_despues": 140,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 140,
+          "tokens_despues": 140,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 140,
+          "tokens_despues": 140,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 140,
+          "tokens_despues": 128,
+          "ahorro": 12
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 128,
+          "tokens_despues": 128,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "multilingual_04.txt",
+      "category": "multilingual",
+      "mode": "safe",
+      "tokens_in": 171,
+      "tokens_out": 171,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 743,
+      "bytes_out": 743,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 171,
+          "tokens_despues": 171,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 171,
+          "tokens_despues": 171,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 171,
+          "tokens_despues": 171,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "multilingual_04.txt",
+      "category": "multilingual",
+      "mode": "aggressive",
+      "tokens_in": 171,
+      "tokens_out": 159,
+      "saved": 12,
+      "pct": 7.0,
+      "bytes_in": 743,
+      "bytes_out": 692,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 171,
+          "tokens_despues": 171,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 171,
+          "tokens_despues": 171,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 171,
+          "tokens_despues": 171,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 171,
+          "tokens_despues": 159,
+          "ahorro": 12
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 159,
+          "tokens_despues": 159,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "multilingual_05.txt",
+      "category": "multilingual",
+      "mode": "safe",
+      "tokens_in": 141,
+      "tokens_out": 141,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 603,
+      "bytes_out": 603,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 141,
+          "tokens_despues": 141,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 141,
+          "tokens_despues": 141,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 141,
+          "tokens_despues": 141,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "multilingual_05.txt",
+      "category": "multilingual",
+      "mode": "aggressive",
+      "tokens_in": 141,
+      "tokens_out": 129,
+      "saved": 12,
+      "pct": 8.5,
+      "bytes_in": 603,
+      "bytes_out": 552,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 141,
+          "tokens_despues": 141,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 141,
+          "tokens_despues": 141,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 141,
+          "tokens_despues": 141,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 141,
+          "tokens_despues": 129,
+          "ahorro": 12
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 129,
+          "tokens_despues": 129,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "multilingual_06.txt",
+      "category": "multilingual",
+      "mode": "safe",
+      "tokens_in": 139,
+      "tokens_out": 139,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 599,
+      "bytes_out": 599,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 139,
+          "tokens_despues": 139,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 139,
+          "tokens_despues": 139,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 139,
+          "tokens_despues": 139,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "multilingual_06.txt",
+      "category": "multilingual",
+      "mode": "aggressive",
+      "tokens_in": 139,
+      "tokens_out": 127,
+      "saved": 12,
+      "pct": 8.6,
+      "bytes_in": 599,
+      "bytes_out": 548,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 139,
+          "tokens_despues": 139,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 139,
+          "tokens_despues": 139,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 139,
+          "tokens_despues": 139,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 139,
+          "tokens_despues": 127,
+          "ahorro": 12
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 127,
+          "tokens_despues": 127,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "chat_short_01.txt",
+      "category": "chat_short",
+      "mode": "safe",
+      "tokens_in": 8,
+      "tokens_out": 8,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 33,
+      "bytes_out": 33,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 8,
+          "tokens_despues": 8,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 8,
+          "tokens_despues": 8,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 8,
+          "tokens_despues": 8,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "chat_short_01.txt",
+      "category": "chat_short",
+      "mode": "aggressive",
+      "tokens_in": 8,
+      "tokens_out": 8,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 33,
+      "bytes_out": 33,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 8,
+          "tokens_despues": 8,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 8,
+          "tokens_despues": 8,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 8,
+          "tokens_despues": 8,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 8,
+          "tokens_despues": 8,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 8,
+          "tokens_despues": 8,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "chat_short_02.txt",
+      "category": "chat_short",
+      "mode": "safe",
+      "tokens_in": 7,
+      "tokens_out": 7,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 23,
+      "bytes_out": 23,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 7,
+          "tokens_despues": 7,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 7,
+          "tokens_despues": 7,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 7,
+          "tokens_despues": 7,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "chat_short_02.txt",
+      "category": "chat_short",
+      "mode": "aggressive",
+      "tokens_in": 7,
+      "tokens_out": 7,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 23,
+      "bytes_out": 23,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 7,
+          "tokens_despues": 7,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 7,
+          "tokens_despues": 7,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 7,
+          "tokens_despues": 7,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 7,
+          "tokens_despues": 7,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 7,
+          "tokens_despues": 7,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "chat_short_03.txt",
+      "category": "chat_short",
+      "mode": "safe",
+      "tokens_in": 15,
+      "tokens_out": 15,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 59,
+      "bytes_out": 59,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 15,
+          "tokens_despues": 15,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 15,
+          "tokens_despues": 15,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 15,
+          "tokens_despues": 15,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "chat_short_03.txt",
+      "category": "chat_short",
+      "mode": "aggressive",
+      "tokens_in": 15,
+      "tokens_out": 15,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 59,
+      "bytes_out": 59,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 15,
+          "tokens_despues": 15,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 15,
+          "tokens_despues": 15,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 15,
+          "tokens_despues": 15,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 15,
+          "tokens_despues": 15,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 15,
+          "tokens_despues": 15,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "chat_short_04.txt",
+      "category": "chat_short",
+      "mode": "safe",
+      "tokens_in": 5,
+      "tokens_out": 5,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 22,
+      "bytes_out": 22,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 5,
+          "tokens_despues": 5,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 5,
+          "tokens_despues": 5,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 5,
+          "tokens_despues": 5,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "chat_short_04.txt",
+      "category": "chat_short",
+      "mode": "aggressive",
+      "tokens_in": 5,
+      "tokens_out": 5,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 22,
+      "bytes_out": 22,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 5,
+          "tokens_despues": 5,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 5,
+          "tokens_despues": 5,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 5,
+          "tokens_despues": 5,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 5,
+          "tokens_despues": 5,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 5,
+          "tokens_despues": 5,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "chat_short_05.txt",
+      "category": "chat_short",
+      "mode": "safe",
+      "tokens_in": 5,
+      "tokens_out": 5,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 22,
+      "bytes_out": 22,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 5,
+          "tokens_despues": 5,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 5,
+          "tokens_despues": 5,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 5,
+          "tokens_despues": 5,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "chat_short_05.txt",
+      "category": "chat_short",
+      "mode": "aggressive",
+      "tokens_in": 5,
+      "tokens_out": 5,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 22,
+      "bytes_out": 22,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 5,
+          "tokens_despues": 5,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 5,
+          "tokens_despues": 5,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 5,
+          "tokens_despues": 5,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 5,
+          "tokens_despues": 5,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 5,
+          "tokens_despues": 5,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "chat_short_06.txt",
+      "category": "chat_short",
+      "mode": "safe",
+      "tokens_in": 12,
+      "tokens_out": 12,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 46,
+      "bytes_out": 46,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 12,
+          "tokens_despues": 12,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 12,
+          "tokens_despues": 12,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 12,
+          "tokens_despues": 12,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "chat_short_06.txt",
+      "category": "chat_short",
+      "mode": "aggressive",
+      "tokens_in": 12,
+      "tokens_out": 12,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 46,
+      "bytes_out": 46,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 12,
+          "tokens_despues": 12,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 12,
+          "tokens_despues": 12,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 12,
+          "tokens_despues": 12,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 12,
+          "tokens_despues": 12,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 12,
+          "tokens_despues": 12,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "chat_short_07.txt",
+      "category": "chat_short",
+      "mode": "safe",
+      "tokens_in": 7,
+      "tokens_out": 7,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 25,
+      "bytes_out": 25,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 7,
+          "tokens_despues": 7,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 7,
+          "tokens_despues": 7,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 7,
+          "tokens_despues": 7,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "chat_short_07.txt",
+      "category": "chat_short",
+      "mode": "aggressive",
+      "tokens_in": 7,
+      "tokens_out": 7,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 25,
+      "bytes_out": 25,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 7,
+          "tokens_despues": 7,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 7,
+          "tokens_despues": 7,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 7,
+          "tokens_despues": 7,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 7,
+          "tokens_despues": 7,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 7,
+          "tokens_despues": 7,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "chat_short_08.txt",
+      "category": "chat_short",
+      "mode": "safe",
+      "tokens_in": 12,
+      "tokens_out": 12,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 46,
+      "bytes_out": 46,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 12,
+          "tokens_despues": 12,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 12,
+          "tokens_despues": 12,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 12,
+          "tokens_despues": 12,
+          "ahorro": 0
+        }
+      ]
+    },
+    {
+      "file": "chat_short_08.txt",
+      "category": "chat_short",
+      "mode": "aggressive",
+      "tokens_in": 12,
+      "tokens_out": 12,
+      "saved": 0,
+      "pct": 0.0,
+      "bytes_in": 46,
+      "bytes_out": 46,
+      "code_blocks": 0,
+      "code_ok": true,
+      "trace": [
+        {
+          "paso": "dedup_parrafos",
+          "tokens_antes": 12,
+          "tokens_despues": 12,
+          "ahorro": 0
+        },
+        {
+          "paso": "normalizar_espacios",
+          "tokens_antes": 12,
+          "tokens_despues": 12,
+          "ahorro": 0
+        },
+        {
+          "paso": "recortar_lineas",
+          "tokens_antes": 12,
+          "tokens_despues": 12,
+          "ahorro": 0
+        },
+        {
+          "paso": "quitar_relleno",
+          "tokens_antes": 12,
+          "tokens_despues": 12,
+          "ahorro": 0
+        },
+        {
+          "paso": "reducir_decoracion",
+          "tokens_antes": 12,
+          "tokens_despues": 12,
+          "ahorro": 0
+        }
+      ]
+    }
+  ]
+}

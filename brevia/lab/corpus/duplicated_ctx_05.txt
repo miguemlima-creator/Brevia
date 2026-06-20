@@ -1,0 +1,13 @@
+Buenas tardes, quisiera pedirte si fueras tan amable de ayudarme con una duda, te lo agradecería mucho.
+
+Necesito que summarize the following and list the key takeaways.
+
+Aquí está el documento:
+
+El cambio climático y el consumo energético de los centros de datos están ligados. Cada byte transmitido y procesado tiene una huella. Por eso la eficiencia en el uso de modelos no es solo económica, es ambiental.
+
+Te lo pego otra vez por si acaso no te llegó completo:
+
+El cambio climático y el consumo energético de los centros de datos están ligados. Cada byte transmitido y procesado tiene una huella. Por eso la eficiencia en el uso de modelos no es solo económica, es ambiental.
+
+Thank you so much, I really appreciate it. Best regards.

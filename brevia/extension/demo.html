@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brevia — demo</title>
+  <style>
+    :root {
+      --bg:#0E1525; --panel:#16203A; --mint:#02C39A; --ice:#E8EEF5;
+      --muted:#6B7FA3; --amber:#F9B84A; --border:#2A3A5A;
+    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--ice);
+      font-family:'Segoe UI',system-ui,sans-serif; padding:28px; }
+    .head { max-width:980px; margin:0 auto 18px; }
+    h1 { color:var(--mint); margin:0 0 4px; font-size:28px; }
+    .tag { color:var(--muted); margin:0; }
+    .grid { max-width:980px; margin:0 auto; display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+    .card { background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:14px; }
+    .card h2 { font-size:13px; color:var(--muted); margin:0 0 8px; text-transform:uppercase; letter-spacing:.5px; }
+    textarea { width:100%; height:260px; resize:vertical; background:#0E1525; color:var(--ice);
+      border:1px solid var(--border); border-radius:8px; padding:10px; font-size:13px; font-family:inherit; line-height:1.5; }
+    #out { white-space:pre-wrap; height:260px; overflow:auto; background:#0E1525;
+      border:1px solid var(--border); border-radius:8px; padding:10px; font-size:13px; line-height:1.5; }
+    .bar { max-width:980px; margin:16px auto; display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+    button { background:var(--mint); color:#06251D; border:none; border-radius:8px;
+      padding:10px 16px; font-weight:700; cursor:pointer; font-size:14px; }
+    button.ghost { background:transparent; color:var(--ice); border:1px solid var(--border); font-weight:600; }
+    .toggle { color:var(--muted); display:flex; align-items:center; gap:6px; }
+    .stats { max-width:980px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-top:8px; }
+    .stat { background:var(--panel); border:1px solid var(--border); border-radius:12px; padding:14px; text-align:center; }
+    .stat .n { font-size:26px; font-weight:800; color:var(--mint); }
+    .stat .l { color:var(--muted); font-size:11px; margin-top:2px; }
+    .foot { max-width:980px; margin:18px auto 0; color:var(--muted); font-size:12px; text-align:center; }
+  </style>
+</head>
+<body>
+  <div class="head">
+    <h1>Brevia</h1>
+    <p class="tag">Comprime tus prompts antes de mandarlos a cualquier IA. Ahorra tokens y datos. 100% local.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h2>Tu prompt</h2>
+      <textarea id="in" placeholder="Pega aquí tu texto..."></textarea>
+    </div>
+    <div class="card">
+      <h2>Comprimido</h2>
+      <div id="out">—</div>
+    </div>
+  </div>
+
+  <div class="bar">
+    <button id="go">Comprimir ✦</button>
+    <label class="toggle"><input type="checkbox" id="aggr"> Modo agresivo (quita cortesía)</label>
+    <button id="sample" class="ghost">Cargar ejemplo</button>
+    <button id="copy" class="ghost">Copiar resultado</button>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="n" id="s-pct">—</div><div class="l">menos tokens</div></div>
+    <div class="stat"><div class="n" id="s-tok">—</div><div class="l">tokens (antes → después)</div></div>
+    <div class="stat"><div class="n" id="s-byt">—</div><div class="l">bytes ahorrados</div></div>
+    <div class="stat"><div class="n" id="s-usd">—</div><div class="l">USD / 1000 envíos*</div></div>
+  </div>
+
+  <p class="foot">*Estimación a $3 por 1M tokens de entrada · conteo aproximado · sirve para Claude, ChatGPT, Gemini y cualquier LLM.</p>
+
+  <script src="brevia-engine.js"></script>
+  <script>
+    const $ = (id) => document.getElementById(id);
+    const SAMPLE = `Hola, buenas, la verdad es que me gustaría que por favor me ayudaras con una cosa si no es mucha molestia. Muchas gracias de antemano.
+
+Quisiera saber si podrías analizar este texto y darme un resumen.
+
+Aquí está el texto:
+
+La inteligencia artificial está transformando la economía global. Los modelos de lenguaje grandes consumen una unidad de cómputo llamada token. Cada interacción con un modelo tiene un costo en tokens. Optimizar su uso no es solo ahorrar dinero, también reduce el tráfico de datos y el consumo de energía.
+
+Por favor analízalo bien. Te lo pego otra vez por si acaso:
+
+La inteligencia artificial está transformando la economía global. Los modelos de lenguaje grandes consumen una unidad de cómputo llamada token. Cada interacción con un modelo tiene un costo en tokens. Optimizar su uso no es solo ahorrar dinero, también reduce el tráfico de datos y el consumo de energía.
+
+Muchas gracias, de verdad te lo agradezco muchísimo. Saludos.`;
+
+    function fmt(n){ return n.toLocaleString('es'); }
+    let last = '';
+
+    $('go').addEventListener('click', () => {
+      const text = $('in').value;
+      if (!text.trim()) return;
+      const r = globalThis.Brevia.compress(text, { aggressive: $('aggr').checked });
+      last = r.text;
+      $('out').textContent = r.text;
+      $('s-pct').textContent = '−' + r.pct + '%';
+      $('s-tok').textContent = fmt(r.tokensIn) + '→' + fmt(r.tokensOut);
+      $('s-byt').textContent = '−' + fmt(r.bytesSaved);
+      $('s-usd').textContent = '$' + (r.saved / 1e6 * 3 * 1000).toFixed(3);
+    });
+    $('sample').addEventListener('click', () => { $('in').value = SAMPLE; });
+    $('copy').addEventListener('click', async () => {
+      if (!last) return;
+      try { await navigator.clipboard.writeText(last); $('copy').textContent='¡Copiado!'; }
+      catch(e){ $('copy').textContent='Copia manual'; }
+      setTimeout(()=>$('copy').textContent='Copiar resultado',1200);
+    });
+  </script>
+</body>
+</html>

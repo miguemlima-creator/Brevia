@@ -1,0 +1,12 @@
+Hello, just wanted to ask, would you kindly help me out here? Thanks a lot.
+
+explica qué hace este código y si tiene bugs:
+
+```sql
+SELECT user_id, SUM(tokens) AS total
+FROM usage
+GROUP BY user_id
+ORDER BY total DESC;
+```
+
+Por favor sé detallado. Gracias.

@@ -1,0 +1,11 @@
+Hi, I was wondering if you could please help me with something. Thank you so much in advance.
+
+explica qué hace este código y si tiene bugs:
+
+```python
+def compress(text):
+    text = re.sub(r'[ \t]+', ' ', text)
+    return text.strip()
+```
+
+Por favor sé detallado. Gracias.

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "brevia": {
+      "command": "C:\\Users\\Miguel Marrero\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+      "args": ["C:\\Users\\Miguel Marrero\\Brevia\\brevia\\mcp_server.py"]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+Hi, I was wondering if you could please help me with something. Thank you so much in advance.
+
+explica qué hace este código y si tiene bugs:
+
+```js
+function countTokens(s){
+  const chars = s.length;
+  return Math.round(chars/4);
+}
+```
+
+Por favor sé detallado. Gracias.

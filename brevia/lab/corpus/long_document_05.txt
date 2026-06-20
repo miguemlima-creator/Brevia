@@ -1,0 +1,13 @@
+Hello, just wanted to ask, would you kindly help me out here? Thanks a lot.
+
+Tengo un documento largo y necesito que tradúceme esto al inglés manteniendo el tono:
+
+A well structured prompt gives the model exactly what it needs and nothing more. Redundant context, repeated documents, and verbose politeness all inflate the token count without improving the answer quality.
+
+El petróleo bajó en importancia relativa mientras subían nuevas formas de valor. Algunos piensan que los tokens de cómputo serán una unidad central de la economía digital del futuro, y que la eficiencia en su uso será una ventaja competitiva real.
+
+Large language models are priced per token. As adoption grows, the aggregate cost of tokens becomes a major operating expense for any company building on top of these systems. Reducing context size directly reduces both cost and bandwidth.
+
+El cambio climático y el consumo energético de los centros de datos están ligados. Cada byte transmitido y procesado tiene una huella. Por eso la eficiencia en el uso de modelos no es solo económica, es ambiental.
+
+Thank you so much, I really appreciate it. Best regards.

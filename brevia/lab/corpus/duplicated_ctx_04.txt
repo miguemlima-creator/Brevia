@@ -1,0 +1,13 @@
+Buenas tardes, quisiera pedirte si fueras tan amable de ayudarme con una duda, te lo agradecería mucho.
+
+Necesito que analiza este texto y dame la idea principal y un resumen corto.
+
+Aquí está el documento:
+
+Large language models are priced per token. As adoption grows, the aggregate cost of tokens becomes a major operating expense for any company building on top of these systems. Reducing context size directly reduces both cost and bandwidth.
+
+Te lo pego otra vez por si acaso no te llegó completo:
+
+Large language models are priced per token. As adoption grows, the aggregate cost of tokens becomes a major operating expense for any company building on top of these systems. Reducing context size directly reduces both cost and bandwidth.
+
+Thanks in advance, you're the best!

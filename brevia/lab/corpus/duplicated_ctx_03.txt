@@ -1,0 +1,13 @@
+Buenas tardes, quisiera pedirte si fueras tan amable de ayudarme con una duda, te lo agradecería mucho.
+
+Necesito que extrae los puntos accionables de lo siguiente.
+
+Aquí está el documento:
+
+La inteligencia artificial está transformando la economía global. Los modelos de lenguaje grandes consumen una unidad de cómputo llamada token. Cada interacción tiene un costo en tokens, tanto de entrada como de salida. Optimizar su uso no es solo ahorrar dinero, también reduce el tráfico de datos y el consumo de energía.
+
+Te lo pego otra vez por si acaso no te llegó completo:
+
+La inteligencia artificial está transformando la economía global. Los modelos de lenguaje grandes consumen una unidad de cómputo llamada token. Cada interacción tiene un costo en tokens, tanto de entrada como de salida. Optimizar su uso no es solo ahorrar dinero, también reduce el tráfico de datos y el consumo de energía.
+
+Muchas gracias, de verdad te lo agradezco muchísimo. Saludos.

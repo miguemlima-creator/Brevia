@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# B8 study — datos personales (el código se versiona, los datos de la gente NO)
+b8-lab/study/paquetes/
+b8-lab/study/resultados/
+b8-lab/study/dataset.jsonl
+b8-lab/study/REPORTE_B8_DATOS.md
+b8-lab/study/_test*.js

@@ -1,0 +1,12 @@
+Oye, la neta, me gustaría que por favor revisaras esto cuando puedas, gracias de verdad.
+
+añade manejo de errores a esto:
+
+```js
+function countTokens(s){
+  const chars = s.length;
+  return Math.round(chars/4);
+}
+```
+
+Por favor sé detallado. Gracias.
