@@ -15,3 +15,9 @@ b8-lab/study/_test*.js
 # Bundles generados (se regeneran; no versionar)
 para-estudiante/
 *.zip
+
+# Borradores internos / generados (no publicar)
+X-POST.md
+MENSAJE_COMUNIDAD.md
+paper/PAPER.html
+dossiers/_b8_spec.json
