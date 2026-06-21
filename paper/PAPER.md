@@ -170,6 +170,14 @@ that more of each interaction compresses as the system "gets to know" them — r
 (local). The vendor-side cost features (prompt caching, executor/advisor tiering) optimize a
 different axis (per-token cost, not tokens-sent), so this is complementary, not competing.
 
+Beyond cost, the deeper motivation is **co-adaptation**. As a person and the system work
+through ideas together, the shared codebook enriches: the model's effective language
+converges toward the user's, less needs to be spelled out, and the interaction grows more
+attuned — the tool becomes, in a practical sense, *more like the person using it*. Token
+reduction is the measurable surface of this convergence; the underlying aim is a personal,
+portable layer that makes human–model collaboration progressively more fluent and more
+**yours**. The compression is how we measure it; the fusion is why it matters.
+
 ---
 
 ## 8. Call for collaboration (open-source)
