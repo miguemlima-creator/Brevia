@@ -29,5 +29,6 @@ Casa propia del proyecto de Miguel — independiente del repo de TradingView de 
 
 ---
 
-© 2026 **Miguel Marrero**. Todos los derechos reservados. Brevia y la investigación B8 son
-de su autoría — ver `LICENSE.txt` (uso solo para evaluación) y `legal/NDA-plantilla.md`.
+© 2026 **Miguel Marrero**. Publicado bajo licencia **MIT** — uso libre **con atribución**
+(ver `LICENSE.txt`). Brevia y la investigación B8 son de su autoría; el historial de git
+acredita la fecha y el origen.
