@@ -23,6 +23,7 @@ Casa propia del proyecto de Miguel — independiente del repo de TradingView de 
 | Terminal, rápido | ⌨️ CLI | `python brevia/compress.py --file x.txt` |
 
 ## Empezar
+- **Paper (preliminar, EN):** [`paper/PAPER.md`](paper/PAPER.md) — *Brevia: Self-Decodable Shorthand for Model-Agnostic Prompt Compression*
 - Probar sin instalar nada: abre `brevia/extension/demo.html`.
 - Mapa del proyecto y próximos pasos: `b8-lab/BLUEPRINT.md`.
 
