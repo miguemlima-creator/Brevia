@@ -1,34 +1,74 @@
 # Brevia
 
-**Comprime el texto antes de que llegue al LLM. Menos tokens, menos datos, menos energía.**
-Model-agnostic (Claude, ChatGPT, Gemini…), corre local, sin telemetría.
+**Compress text before it reaches the LLM. Fewer tokens, less data, less energy.**
 
-Casa propia del proyecto de Miguel — independiente del repo de TradingView de Lewis Jackson.
+Model-agnostic (Claude, ChatGPT, Gemini, local models). Runs locally. No telemetry.
 
-## Qué hay aquí
-
-| Carpeta | Qué es |
-|---|---|
-| `brevia/` | La herramienta: motor CLI, extensión de navegador, servidor MCP, proxy, compresor semántico, cápsulas, paquetes para compartir |
-| `b8-lab/` | La investigación **B8**: ¿puede el modelo crear su propio lenguaje comprimido? (taquigrafía zero-shot + codebook sectorial) |
-| `dossiers/` | Informes de investigación en PDF |
-
-## Las 4 puertas de Brevia (cada una corre en un lugar)
-
-| Dónde usas la IA | Pieza | Cómo |
-|---|---|---|
-| Chat web (claude.ai, ChatGPT) | 🧩 Extensión | `brevia/extension/` → cargar en el navegador |
-| Claude Code / Desktop | 📟 MCP | `brevia/MCP_SETUP.md` |
-| App / API (devs) | 🔌 Proxy | `brevia/PROXY_SETUP.md` |
-| Terminal, rápido | ⌨️ CLI | `python brevia/compress.py --file x.txt` |
-
-## Empezar
-- **Paper (preliminar, EN):** [`paper/PAPER.md`](paper/PAPER.md) — *Brevia: Self-Decodable Shorthand for Model-Agnostic Prompt Compression*
-- Probar sin instalar nada: abre `brevia/extension/demo.html`.
-- Mapa del proyecto y próximos pasos: `b8-lab/BLUEPRINT.md`.
+> Tokens are the new oil — and we're burning them. Brevia trims the prompt
+> *before* it ever hits the model, without changing what you're actually asking.
 
 ---
 
-© 2026 **Miguel Marrero**. Publicado bajo licencia **MIT** — uso libre **con atribución**
-(ver `LICENSE.txt`). Brevia y la investigación B8 son de su autoría; el historial de git
-acredita la fecha y el origen.
+## Why
+
+Every redundant paragraph, every "could you please kindly" is tokens — which means
+money, bandwidth, and energy spent for nothing. Brevia cleans the text while
+preserving your intent, then reports exactly how much you saved.
+
+```
+tokens   :     355  ->      229   (35.5% less)
+bytes    :   1,528  ->      979   (bandwidth saved)
+cost/call:  $0.000378  ->  ...
+```
+
+## The four doors (each runs where you already work)
+
+| Where you use AI | Piece | How |
+|---|---|---|
+| Web chat (claude.ai, ChatGPT) | 🧩 Extension | load `brevia/extension/` in your browser |
+| Claude Code / Desktop | 🖥️ MCP server | see `brevia/MCP_SETUP.md` |
+| App / API (developers) | 🔌 Proxy | see `brevia/PROXY_SETUP.md` |
+| Terminal, quick | ⌨️ CLI | `python brevia/compress.py --file x.txt` |
+
+## Quick start (CLI)
+
+```bash
+# safe mode (lossless) — default
+python brevia/compress.py --file prompt.txt --diff
+
+# aggressive mode (also strips filler/politeness) — opt-in
+python brevia/compress.py --file prompt.txt --aggressive --diff
+
+# direct text, or pipe from stdin
+python brevia/compress.py --text "Could you please help me with..."
+cat prompt.txt | python brevia/compress.py
+```
+
+For exact token counts: `pip install tiktoken` (otherwise it estimates char/4).
+
+## What it does
+
+**Safe (default, lossless):** removes exact duplicate paragraphs, normalizes
+whitespace and blank lines.
+
+**Aggressive (`--aggressive`, opt-in):** removes filler/politeness that doesn't
+change the instruction (bilingual EN/ES), reduces decoration (`---` rules, emoji
+chains). **Never** touches code blocks and never changes your meaning.
+
+## What's in this repo
+
+| Folder | What it is |
+|---|---|
+| `brevia/` | The tool: CLI engine, browser extension, MCP server, proxy, semantic compressor, context capsules |
+| `b8-lab/` | Research **B8**: can a model invent its own compressed shorthand? (zero-shot stenography + sectorial codebook) |
+| `paper/` | Paper render utilities (md → readable HTML) |
+
+## Roadmap
+
+- **Layer 1 — tokens:** lossless + aggressive compression (shipping, ~35–45%).
+- **Layer 2 — voice:** a personal codebook that learns the *author's* writing style,
+  so AI-assisted output still sounds like its owner. (research)
+
+## License
+
+MIT — open with attribution. See `LICENSE`.
