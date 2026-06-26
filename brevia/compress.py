@@ -59,10 +59,31 @@ def normalize_whitespace(text):
     return text.strip()
 
 
+# Frases de "intro" que solo presentan un bloque ("te lo pego otra vez:", etc.).
+# Si el bloque que presentan se elimina por duplicado, esta intro queda huerfana.
+LEAD_IN_RE = re.compile(
+    r"(te lo (?:pego|dejo|mando)|aqu[ií] (?:te |lo )?(?:dejo|pego|va|est[aá])|por si acaso|"
+    r"otra vez|de nuevo|para que (?:tengas|veas|lo tengas|quede claro)|"
+    r"i(?:'ll| will)? paste|here(?:'s| is)|again|for context)",
+    re.IGNORECASE,
+)
+
+
+def _is_lead_in(block):
+    """Heuristica (Finding 2): linea corta que solo introduce algo —
+    termina en ':' o coincide con una frase conectora de 'te lo pego otra vez'."""
+    s = block.strip()
+    if not s:
+        return False
+    return len(s) <= 80 and (s.rstrip().endswith(":") or bool(LEAD_IN_RE.search(s)))
+
+
 def dedup_blocks(text):
     """Quita parrafos duplicados exactos (caso clasico: pegar el mismo
     contexto/documento dos veces). Sin perdida — el modelo no necesita el
-    duplicado. Conserva el ORDEN de la primera aparicion."""
+    duplicado. Conserva el ORDEN de la primera aparicion. Si el duplicado venia
+    precedido de una linea de intro ('te lo pego otra vez:'), la quita tambien
+    para no dejarla huerfana (Finding 2 del reporte de Sar)."""
     blocks = re.split(r"\n\s*\n", text)
     seen = set()
     out = []
@@ -72,6 +93,9 @@ def dedup_blocks(text):
             out.append(b)
             continue
         if key in seen:
+            # el bloque es duplicado: quitar la intro huerfana que lo precedia
+            if out and _is_lead_in(out[-1]):
+                out.pop()
             continue
         seen.add(key)
         out.append(b)
@@ -139,6 +163,19 @@ def collapse_markdown_noise(text):
     return text
 
 
+def recapitalize(text):
+    """Tras quitar relleno, capitaliza el inicio de cada oracion para no dejar
+    fragmentos en minuscula (Finding 5 del reporte de Sar: 'please note that...'
+    -> 'Note that...'). El codigo va blindado en el pipeline, asi que no se toca."""
+    # inicio del texto
+    text = re.sub(r"^(\s*)([a-záéíóúñ])",
+                  lambda m: m.group(1) + m.group(2).upper(), text)
+    # tras . ! ? o salto de linea
+    text = re.sub(r"([.!?]\s+|\n[ \t]*)([a-záéíóúñ])",
+                  lambda m: m.group(1) + m.group(2).upper(), text)
+    return text
+
+
 SAFE_STEPS = [
     ("dedup_parrafos", dedup_blocks),
     ("normalizar_espacios", normalize_whitespace),
@@ -147,6 +184,7 @@ SAFE_STEPS = [
 AGGRESSIVE_STEPS = [
     ("quitar_relleno", strip_filler),
     ("reducir_decoracion", collapse_markdown_noise),
+    ("recapitalizar", recapitalize),
 ]
 
 
@@ -213,12 +251,21 @@ def report(text_in, text_out, t_in, t_out, trace, method,
     def w(s):
         sys.stdout.buffer.write((s + "\n").encode("utf-8", errors="replace"))
 
+    is_estimate = not method.lower().startswith("tiktoken")
+
     w("")
     w("  BREVIA · reporte de compresion")
     w("  " + "-" * 42)
     w(f"  tokens   : {t_in:>7,}  ->  {t_out:>7,}   ({saved:+,} | {pct:.1f}% menos)")
     w(f"  bytes    : {bytes_in:>7,}  ->  {bytes_out:>7,}   ({bytes_saved:+,} B menos)")
     w(f"  metodo   : {method}")
+    if is_estimate:
+        w("  !! conteo ESTIMADO (sin tiktoken): emojis y codigo se estiman mal.")
+        w("     Para exactitud:  pip install tiktoken")
+    if saved == 0:
+        w("")
+        w("  i  0% — el modo seguro solo quita duplicados y normaliza espacios.")
+        w("     Prueba --aggressive, o revisa si hay contexto repetido que comprimir.")
     w("")
     w(f"  por envio        : ${usd_per_send:.6f}  (a ${price_in}/1M tokens in)")
     w(f"  x {sends:,} envios  : ${usd_batch:.4f}")
