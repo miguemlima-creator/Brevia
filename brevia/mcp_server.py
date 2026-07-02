@@ -10,6 +10,9 @@ Expone Brevia DENTRO de Claude (Code o Desktop) como herramientas MCP:
   capsule_pack      — reemplaza contenido conocido por referencias [[cap:NOMBRE]]
   capsule_expand    — expande referencias a su contenido
   capsule_suggest   — sugiere qué bloques convendría encapsular
+  shorthand_pack    — B8: blinda términos duros como @n; el modelo escribe la taquigrafía
+  shorthand_expand  — B8: restaura los @n de una taquigrafía; el modelo la expande
+  shorthand_book    — B8: muestra el codebook personal aprendido
 
 Protocolo: JSON-RPC 2.0 sobre stdio, mensajes delimitados por línea (MCP stdio).
 IMPORTANTE: stdout solo lleva mensajes JSON-RPC. Los logs van a stderr.
@@ -24,10 +27,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import compress  # noqa: E402
+import shorthand  # noqa: E402
 from capsules import CapsuleStore  # noqa: E402
 
 PROTOCOL_VERSION = "2024-11-05"
-SERVER_INFO = {"name": "brevia", "version": "0.1.0"}
+SERVER_INFO = {"name": "brevia", "version": "0.2.0"}
 
 _counter, _method = compress._tiktoken_counter()
 _method = _method or "estimacion char/4"
@@ -93,6 +97,35 @@ def t_capsule_suggest(args):
     if not sugg:
         return "(nada que sugerir)"
     return "\n".join(f"~{s['tokens']} tokens x{s['repeats']}: {s['sample']}..." for s in sugg)
+
+
+def t_shorthand_pack(args):
+    r = shorthand.pack(args.get("text", ""), counter=_counter)
+    t_in = compress.count_tokens(args.get("text", ""), _counter)
+    t_out = compress.count_tokens(r["text"], _counter)
+    head = (f"[B8 pack] {t_in} -> {t_out} tokens · {len(r['book'])} términos duros "
+            f"blindados como @n (codebook cacheado, no lo repitas)\n")
+    body = (f"{r['book_block']}\n\n" if r["book"] else "")
+    task = ("AHORA TÚ (capa 1): " + shorthand.ENCODE_INSTRUCTION + "\n\n")
+    return head + body + task + r["text"]
+
+
+def t_shorthand_expand(args):
+    r = shorthand.expand(args.get("text", ""))
+    note = f"(códigos desconocidos: {', '.join(r['missing'])})\n" if r["missing"] else ""
+    task = "AHORA TÚ (capa 1): " + shorthand.DECODE_INSTRUCTION + "\n\n"
+    return note + task + r["text"]
+
+
+def t_shorthand_book(args):
+    book = shorthand.ShorthandBook()
+    terms = book.data["terms"]
+    if not terms:
+        return "(codebook vacío — se aprende solo al usar shorthand_pack)"
+    lines = [f"codebook personal · {len(terms)} términos"]
+    for c, v in sorted(terms.items(), key=lambda kv: int(kv[0][1:])):
+        lines.append(f"{c} = {v['term']}  [{v['sector']}] x{v['uses']}")
+    return "\n".join(lines)
 
 
 TOOLS = [
@@ -170,6 +203,32 @@ TOOLS = [
             "properties": {"text": {"type": "string"}},
             "required": ["text"],
         },
+    },
+    {
+        "name": "shorthand_pack",
+        "description": "B8 · Prepara un texto para taquigrafía de 2 capas: blinda términos duros (acrónimos, nombres propios) como códigos @n con un codebook persistente y cacheable. Tras llamarla, TÚ escribes la taquigrafía semántica densa del texto devuelto (conservando los @n intactos). Ahorro típico ~50% con ~95% de fidelidad.",
+        "handler": t_shorthand_pack,
+        "inputSchema": {
+            "type": "object",
+            "properties": {"text": {"type": "string", "description": "Texto a preparar"}},
+            "required": ["text"],
+        },
+    },
+    {
+        "name": "shorthand_expand",
+        "description": "B8 · Restaura los códigos @n de una taquigrafía a sus términos exactos usando el codebook personal. Tras llamarla, TÚ expandes la taquigrafía restaurada a lenguaje natural completo (zero-shot, sin glosario).",
+        "handler": t_shorthand_expand,
+        "inputSchema": {
+            "type": "object",
+            "properties": {"text": {"type": "string", "description": "Taquigrafía con códigos @n"}},
+            "required": ["text"],
+        },
+    },
+    {
+        "name": "shorthand_book",
+        "description": "B8 · Muestra el codebook personal aprendido (término = código @n, sector, usos). Crece solo con el uso: es el 'idioma personal' emergente del usuario.",
+        "handler": t_shorthand_book,
+        "inputSchema": {"type": "object", "properties": {}},
     },
 ]
 TOOL_BY_NAME = {t["name"]: t for t in TOOLS}

@@ -7,6 +7,11 @@ para saber si la idea tiene piernas antes de pedir recursos.
 
 > Brevia = aporte al curso. **B8 = el proyecto propio.** Esto es su primera evidencia.
 
+> **Actualización (2 jul 2026):** la arquitectura de 2 capas validada aquí (E0.5 + E2)
+> **ya se graduó a producto** — vive en `brevia/shorthand.py` (CLI `pack`/`unpack`/`book`
+> + tools MCP `shorthand_*`) con codebook persistente que crece con el uso. Este lab
+> queda como el registro de la evidencia y la base de los siguientes escalones (E1).
+
 ## La pregunta que hace o rompe la idea
 
 Si construimos un codebook (frase frecuente → código corto) observando el chat,

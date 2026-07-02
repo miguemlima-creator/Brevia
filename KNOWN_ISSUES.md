@@ -38,6 +38,16 @@ this is exactly the kind of review that makes the project better.
 - **The browser extension (JS engine) does not yet include the orphan-line and
   re-capitalization fixes** — those are in the Python CLI (`compress.py`). Porting them to
   `brevia/extension/brevia-engine.js` is a follow-up.
+- **B8 shorthand is lossy and its evidence base is small (n=3).** The ~52% compression /
+  ~95% blind-decode fidelity figures come from three independent sources plus one blind
+  test each — directional, not a distribution. Layer 2 (the `@n` codebook) is deterministic
+  and lossless, but layer 1 (the model's stenography) can drop nuance at the edges. Don't
+  use shorthand for legal/critical text; scaling the evidence to n=20+ (E1) is the next
+  research step.
+- **Hard-term detection in `shorthand.py` is heuristic.** It catches quoted terms,
+  acronyms/codes, and capitalized proper nouns; it will miss lowercase coined terms
+  (e.g. a project named "brevia" written in lowercase) and mixed-case words like
+  "ChatGPT" (which strong decoders recover anyway).
 
 ---
 

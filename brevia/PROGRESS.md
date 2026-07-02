@@ -59,6 +59,17 @@ ahorra tokens **y** ancho de banda. Concepto completo: `CONCEPT.md`.
   en el medidor), modo semántico (`--semantic --keep`), expansión de cápsulas
   (`--capsules`), caché de respuestas exactas (`--cache`). Probado en dry-run.
 
+- [x] **B8 · Shorthand de 2 capas** (`shorthand.py`) — **la fusión Brevia + B8**
+  (2 jul 2026). La arquitectura validada en el lab (E0.5 + E2: taquigrafía
+  zero-shot ~52% / ~95% fidelidad ciega + codebook sectorial) ahora es módulo de
+  producto: codebook **persistente** en `~/.brevia/codebook.json` con códigos `@n`
+  ESTABLES entre sesiones (lección E0: el codebook solo compensa cacheado) que
+  crece con el uso — la semilla del "idioma personal" / B8 vivo. CLI
+  (`pack`/`unpack`/`book`) + 3 tools MCP (`shorthand_pack/expand/book`, server
+  v0.2.0, 10 tools). **Probado:** detección 6/6 términos duros de la muestra E2,
+  códigos reutilizados entre procesos, roundtrip de restauración exacto, handshake
+  MCP y las 10 tools OK. La capa 1 (taquigrafía) la escribe el LLM que llama.
+
 ## Correr B1 / LAB
 
 ```bash

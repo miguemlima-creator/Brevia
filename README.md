@@ -55,19 +55,36 @@ whitespace and blank lines.
 change the instruction (bilingual EN/ES), reduces decoration (`---` rules, emoji
 chains). **Never** touches code blocks and never changes your meaning.
 
+**Shorthand (B8, opt-in):** the two-layer architecture from our research
+(see `paper/PAPER.md`): the *model itself* rewrites your text in its own dense
+shorthand (~50% compression, ~95% blind-decode fidelity, zero-shot), while a
+persistent **personal codebook** shields hard terms (acronyms, proper nouns)
+as stable `@n` codes so they survive losslessly. The codebook lives locally
+(`~/.brevia/codebook.json`) and grows with use — the more you use it, the more
+it speaks *your* language.
+
+```bash
+python brevia/shorthand.py pack --text "..."    # shield terms + LLM instruction
+python brevia/shorthand.py unpack --text "..."  # restore @n codes
+python brevia/shorthand.py book                 # your learned codebook
+```
+
+Inside Claude (MCP): `shorthand_pack` / `shorthand_expand` / `shorthand_book`.
+
 ## What's in this repo
 
 | Folder | What it is |
 |---|---|
-| `brevia/` | The tool: CLI engine, browser extension, MCP server, proxy, semantic compressor, context capsules |
-| `b8-lab/` | Research **B8**: can a model invent its own compressed shorthand? (zero-shot stenography + sectorial codebook) |
+| `brevia/` | The tool: CLI engine, browser extension, MCP server, proxy, semantic compressor, context capsules, B8 shorthand |
+| `b8-lab/` | Research **B8**: can a model invent its own compressed shorthand? Validated (zero-shot stenography + sectorial codebook) — now shipped as `brevia/shorthand.py` |
 | `paper/` | Paper render utilities (md → readable HTML) |
 
 ## Roadmap
 
 - **Layer 1 — tokens:** lossless + aggressive compression (shipping, ~35–45%).
 - **Layer 2 — voice:** a personal codebook that learns the *author's* writing style,
-  so AI-assisted output still sounds like its owner. (research)
+  so AI-assisted output still sounds like its owner. (v1 shipping: B8 shorthand —
+  self-decodable model stenography + a personal codebook that grows with use)
 
 ## License
 
