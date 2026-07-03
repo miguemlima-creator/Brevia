@@ -21,6 +21,15 @@ this is exactly the kind of review that makes the project better.
 
 ---
 
+## Open (found 2026-07-03, not yet fixed)
+
+| # | Issue | File | Repro |
+|---|---|---|---|
+| 6 | Aggressive mode can merge two paragraphs and leave broken punctuation (e.g. `"Analízalo bien., de verdad..."`). Happens when a stripped filler phrase (like "Muchas gracias,") is followed by a comma instead of a period: the punctuation-spacing cleanup regex (`\s+([,.;:!?])`) also matches across the blank line separating paragraphs, collapsing it and gluing the leftover comma onto the previous sentence. | `compress.py` (`strip_filler`) | `python3 compress.py --file sample_prompt.txt -a --diff` |
+| 7 | `two_layer.py` reports a false "success" checkmark when run with a non-interactive but empty stdin (e.g. CI, scripts, sandboxed shells). `sys.stdin.isatty()` is `False` in that case, so it reads `""` instead of falling back to the built-in sample text, and prints `0/0 términos recuperados ✅ sin pérdida` — a misleading green check for input that was never actually processed. | `b8-lab/two_layer.py` (`main`, line ~132) | Run `python3 two_layer.py` with stdin closed/empty and non-tty |
+
+---
+
 ## Remaining limitations (honest)
 
 - **Safe-mode savings are concentrated**, not universal. The ~22% aggregate benchmark figure
