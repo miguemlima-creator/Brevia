@@ -11,8 +11,12 @@ param(
 )
 
 $RepoRoot = Split-Path -Parent $PSScriptRoot
+# Ruta corta 8.3 (sin espacios): las comillas anidadas no sobreviven el viaje
+# PowerShell -> npx -> node en Windows y "C:\Users\Miguel Marrero\..." se parte.
+$fso = New-Object -ComObject Scripting.FileSystemObject
+$RepoRootShort = $fso.GetFolder($RepoRoot).ShortPath
 if ($McpCommand -eq "") {
-    $McpCommand = "python `"$RepoRoot\brevia\mcp_server.py`""
+    $McpCommand = "python $RepoRootShort\brevia\mcp_server.py"
 }
 
 foreach ($tool in @("node", "npx", "cloudflared")) {
@@ -22,16 +26,23 @@ foreach ($tool in @("node", "npx", "cloudflared")) {
     }
 }
 
-$gatewayArgs = "-y supergateway --stdio `"$McpCommand`" --port $Port --outputTransport $Transport"
-if ($Transport -eq "streamableHttp") { $gatewayArgs += " --streamableHttpPath /mcp" }
+$gatewayCmd = "npx -y supergateway --stdio `"$McpCommand`" --port $Port --outputTransport $Transport"
+if ($Transport -eq "streamableHttp") { $gatewayCmd += " --streamableHttpPath /mcp" }
+
+# Ventanas via archivos .cmd: es la unica forma determinista de que las comillas
+# de --stdio lleguen intactas a node (Start-Process powershell -Command las come).
+$tmpDir = Join-Path $env:TEMP "brevia-connector"
+New-Item -ItemType Directory -Force $tmpDir | Out-Null
+Set-Content -Path "$tmpDir\gateway.cmd" -Value "@echo off`r`n$gatewayCmd" -Encoding ascii
+Set-Content -Path "$tmpDir\tunnel.cmd" -Value "@echo off`r`ncloudflared tunnel --url http://localhost:$Port" -Encoding ascii
 
 Write-Host "[1/2] Gateway MCP->HTTP en puerto $Port ($Transport)..."
-Start-Process powershell -ArgumentList "-NoExit", "-Command", "npx $gatewayArgs"
+Start-Process cmd -ArgumentList "/k", "$tmpDir\gateway.cmd"
 
 Start-Sleep -Seconds 3
 
 Write-Host "[2/2] Tunel Cloudflare... (copia la URL https://....trycloudflare.com que aparece)"
-Start-Process powershell -ArgumentList "-NoExit", "-Command", "cloudflared tunnel --url http://localhost:$Port"
+Start-Process cmd -ArgumentList "/k", "$tmpDir\tunnel.cmd"
 
 $path = if ($Transport -eq "streamableHttp") { "/mcp" } else { "/sse" }
 Write-Host ""
